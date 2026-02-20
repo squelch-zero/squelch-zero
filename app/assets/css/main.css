@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+body {
+  @apply bg-neutral-950 text-neutral-300;
+}
