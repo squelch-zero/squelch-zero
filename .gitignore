@@ -21,4 +21,9 @@ logs
 # Local env files
 .env
 .env.*
-!.env.example
+
+# Infrastructure — never commit (Constraint #3)
+CLAUDE.md
+CONSTRAINTS.md
+INIT.md
+.env.example
