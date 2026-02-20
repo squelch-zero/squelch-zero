@@ -14,7 +14,15 @@ export default defineNuxtConfig({
       title: 'Squelch Zero',
       meta: [
         { name: 'description', content: 'Below the threshold. Everything comes through.' }
+      ],
+      link: [
+        { rel: 'alternate', type: 'application/rss+xml', title: 'Squelch Zero', href: '/rss.xml' }
       ]
+    }
+  },
+  nitro: {
+    prerender: {
+      routes: ['/rss.xml']
     }
   }
 })
