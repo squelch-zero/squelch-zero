@@ -2,5 +2,90 @@
 @import "@nuxt/ui";
 
 body {
-  @apply bg-neutral-950 text-neutral-300;
+  @apply bg-neutral-950 text-neutral-300 antialiased;
+}
+
+::selection {
+  background: rgba(161, 161, 170, 0.15);
+}
+
+/* Article prose overrides */
+.dispatch-body :where(h1) {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-neutral-100);
+}
+
+.dispatch-body :where(h2) {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--color-neutral-200);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.dispatch-body :where(h3) {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-neutral-200);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.dispatch-body :where(p) {
+  color: var(--color-neutral-400);
+  line-height: 1.75;
+}
+
+.dispatch-body :where(a) {
+  color: var(--color-neutral-300);
+  text-decoration: underline;
+  text-decoration-color: var(--color-neutral-700);
+  text-underline-offset: 2px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.dispatch-body :where(a:hover) {
+  color: white;
+  text-decoration-color: var(--color-neutral-500);
+}
+
+.dispatch-body :where(strong) {
+  color: var(--color-neutral-200);
+}
+
+.dispatch-body :where(blockquote) {
+  border-color: var(--color-neutral-800);
+  color: var(--color-neutral-500);
+}
+
+.dispatch-body :where(code) {
+  color: var(--color-neutral-300);
+  background: rgba(23, 23, 23, 0.5);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+  font-size: 0.875rem;
+}
+
+.dispatch-body :where(pre) {
+  background: rgba(23, 23, 23, 0.5);
+  border: 1px solid rgba(38, 38, 38, 0.5);
+  border-radius: 0.5rem;
+}
+
+.dispatch-body :where(pre code) {
+  background: transparent;
+  padding: 0;
+}
+
+.dispatch-body :where(hr) {
+  border-color: rgba(38, 38, 38, 0.5);
+}
+
+.dispatch-body :where(li) {
+  color: var(--color-neutral-400);
+}
+
+.dispatch-body :where(img) {
+  border-radius: 0.5rem;
 }

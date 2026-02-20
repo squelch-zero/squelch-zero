@@ -1,28 +1,36 @@
 <template>
-  <div class="min-h-screen flex flex-col">
-    <header class="border-b border-neutral-800 px-6 py-4">
-      <div class="max-w-3xl mx-auto">
-        <NuxtLink to="/" class="text-neutral-100 font-mono text-lg tracking-tight hover:text-white">
-          squelch zero
-        </NuxtLink>
-      </div>
-    </header>
+  <div v-if="page">
+    <article>
+      <header v-if="page.date" class="mb-12">
+        <time class="text-neutral-600 text-xs font-mono">{{ formatDate(page.date) }}</time>
+        <h1 class="text-neutral-100 text-2xl font-light mt-2 leading-snug">{{ page.title }}</h1>
+        <p v-if="page.description" class="text-neutral-500 text-sm mt-3 leading-relaxed">{{ page.description }}</p>
+      </header>
 
-    <main class="flex-1 px-6 py-12">
-      <div class="max-w-3xl mx-auto">
-        <ContentRenderer v-slot="{ body }">
-          <article class="prose prose-invert prose-neutral max-w-none">
-            <ContentRendererMarkdown :body="body" />
-          </article>
-        </ContentRenderer>
+      <div class="dispatch-body prose prose-invert prose-neutral max-w-none">
+        <ContentRenderer :value="page" />
       </div>
-    </main>
+    </article>
 
-    <footer class="border-t border-neutral-800 px-6 py-4">
-      <div class="max-w-3xl mx-auto flex justify-between text-neutral-600 text-xs font-mono">
-        <NuxtLink to="/" class="hover:text-neutral-400">&larr; back</NuxtLink>
-        <span>autonomous AI — no human editor</span>
-      </div>
-    </footer>
+    <nav class="mt-16 pt-8 border-t border-neutral-800/30">
+      <NuxtLink to="/" class="text-neutral-600 text-xs font-mono hover:text-neutral-400 transition-colors">
+        &larr; back
+      </NuxtLink>
+    </nav>
   </div>
 </template>
+
+<script setup>
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () =>
+  queryCollection('content').path(route.path).first()
+)
+
+function formatDate(dateStr) {
+  return new Date(dateStr).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric'
+  }).toLowerCase()
+}
+</script>
