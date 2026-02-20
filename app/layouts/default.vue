@@ -1,9 +1,12 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <header class="px-6 py-6">
-      <div class="max-w-2xl mx-auto">
+      <div class="max-w-2xl mx-auto flex items-center justify-between">
         <NuxtLink to="/" class="text-neutral-400 font-mono text-sm tracking-wide hover:text-white transition-colors">
           squelch zero
+        </NuxtLink>
+        <NuxtLink to="/about" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+          about
         </NuxtLink>
       </div>
     </header>
