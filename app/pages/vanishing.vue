@@ -21,6 +21,64 @@
       </div>
     </section>
 
+    <!-- Live endpoint monitoring -->
+    <section v-if="monitorData" class="mb-16 border border-neutral-800/40 rounded-lg p-5">
+      <div class="flex items-baseline justify-between mb-5">
+        <h2 class="text-neutral-600 text-xs font-mono uppercase tracking-wider">Live endpoint monitoring</h2>
+        <p class="text-neutral-700 text-[10px] font-mono">
+          checked {{ timeAgo(monitorData.lastChecked) }}
+        </p>
+      </div>
+
+      <!-- Summary bar -->
+      <div class="flex gap-4 mb-5">
+        <div class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500/80"></span>
+          <span class="text-neutral-500 text-[10px] font-mono">{{ monitorData.summary.live }} live</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500/70"></span>
+          <span class="text-neutral-500 text-[10px] font-mono">{{ monitorData.summary.redirected }} redirected</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-red-500/70"></span>
+          <span class="text-neutral-500 text-[10px] font-mono">{{ monitorData.summary.down }} down</span>
+        </div>
+        <div v-if="monitorData.summary.other" class="flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-neutral-600"></span>
+          <span class="text-neutral-500 text-[10px] font-mono">{{ monitorData.summary.other }} unreachable</span>
+        </div>
+      </div>
+
+      <!-- Status changes alert -->
+      <div v-if="monitorData.changes?.length" class="bg-red-950/20 border border-red-900/30 rounded px-3 py-2 mb-5">
+        <p class="text-red-400/80 text-[10px] font-mono uppercase tracking-wider mb-1">status changes detected</p>
+        <div v-for="change in monitorData.changes" :key="change.id" class="text-red-300/70 text-xs">
+          {{ change.name }}: {{ change.from }} &rarr; {{ change.to }}
+        </div>
+      </div>
+
+      <!-- Endpoint grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5">
+        <div v-for="ep in monitorData.endpoints" :key="ep.id"
+          class="flex items-center gap-2 py-1">
+          <span class="w-1.5 h-1.5 rounded-full shrink-0"
+            :class="endpointDotClass(ep.status)"></span>
+          <a :href="ep.url" target="_blank" rel="noopener"
+            class="text-[11px] font-mono truncate"
+            :class="ep.status === 'live' ? 'text-neutral-400 hover:text-neutral-300' : ep.status === 'gone' || ep.status === 'dns-fail' || ep.status === 'blocked' ? 'text-red-400/60 hover:text-red-300/70' : 'text-neutral-500 hover:text-neutral-400'">
+            {{ ep.name }}
+          </a>
+          <span v-if="ep.redirected && ep.status !== 'live'" class="text-neutral-700 text-[9px] font-mono shrink-0">&rarr; {{ shortenUrl(ep.redirectUrl) }}</span>
+          <span v-if="ep.status === 'gone' || ep.status === 'dns-fail'" class="text-red-900/80 text-[9px] font-mono shrink-0">{{ ep.statusCode || 'unreachable' }}</span>
+        </div>
+      </div>
+
+      <p class="text-neutral-800 text-[9px] font-mono mt-4">
+        Automated monitoring of {{ monitorData.summary.total }} federal data endpoints. Updated periodically.
+      </p>
+    </section>
+
     <!-- What can no longer be measured -->
     <section class="mb-16">
       <h2 class="text-neutral-600 text-xs font-mono mb-8 uppercase tracking-wider">What can no longer be measured</h2>
@@ -32,8 +90,17 @@
 
           <div class="flex items-baseline justify-between gap-4 mb-2">
             <h3 class="text-neutral-200 text-sm font-light">{{ item.subject }}</h3>
-            <span class="text-[10px] font-mono px-2 py-0.5 rounded shrink-0"
-              :class="statusBadge(item.status)">{{ item.status }}</span>
+            <div class="flex items-center gap-2">
+              <span v-if="categoryEndpoints(item.subject).length"
+                class="flex items-center gap-1">
+                <span v-for="ep in categoryEndpoints(item.subject)" :key="ep.id"
+                  class="w-1 h-1 rounded-full"
+                  :class="endpointDotClass(ep.status)"
+                  :title="ep.name + ': ' + ep.status"></span>
+              </span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded shrink-0"
+                :class="statusBadge(item.status)">{{ item.status }}</span>
+            </div>
           </div>
 
           <p class="text-neutral-500 text-xs leading-relaxed mb-3">{{ item.description }}</p>
@@ -157,21 +224,68 @@
         STAT News, CDC NHANES staff elimination (October 2025).
         The Hill, "Trump administration dismisses scientists working on National Climate Assessment" (April 2025).
         USDA, food security survey termination announcement (September 2025).
+        Endpoint monitoring data collected automatically.
       </p>
       <p class="text-neutral-700 text-xs font-mono mt-4 mb-2">last updated</p>
-      <p class="text-neutral-600 text-xs">February 2026</p>
+      <p class="text-neutral-600 text-xs">February 2026. Endpoint status updated automatically.</p>
     </section>
   </div>
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
+
 useSeoMeta({
   title: 'Vanishing Point — Squelch Zero',
   ogTitle: 'Vanishing Point',
-  description: 'A running inventory of federal data infrastructure destroyed since January 2025. Organized by what can no longer be measured.',
-  ogDescription: 'A running inventory of federal data infrastructure destroyed since January 2025. Organized by what can no longer be measured.',
+  description: 'A running inventory of federal data infrastructure destroyed since January 2025. Organized by what can no longer be measured. Live endpoint monitoring.',
+  ogDescription: 'A running inventory of federal data infrastructure destroyed since January 2025. Organized by what can no longer be measured. Live endpoint monitoring.',
   ogUrl: 'https://squelch-zero.vercel.app/vanishing'
 })
+
+const monitorData = ref(null)
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/endpoint-status.json')
+    if (res.ok) {
+      monitorData.value = await res.json()
+    }
+  } catch {
+    // Monitoring data not available — page still works without it
+  }
+})
+
+function timeAgo(isoString) {
+  const diff = Date.now() - new Date(isoString).getTime()
+  const mins = Math.floor(diff / 60000)
+  if (mins < 1) return 'just now'
+  if (mins < 60) return `${mins}m ago`
+  const hours = Math.floor(mins / 60)
+  if (hours < 24) return `${hours}h ago`
+  const days = Math.floor(hours / 24)
+  return `${days}d ago`
+}
+
+function shortenUrl(url) {
+  if (!url) return ''
+  try {
+    const u = new URL(url)
+    return u.hostname + (u.pathname.length > 20 ? u.pathname.slice(0, 20) + '...' : u.pathname)
+  } catch { return url }
+}
+
+function endpointDotClass(status) {
+  if (status === 'live') return 'bg-emerald-500/80'
+  if (status === 'redirected') return 'bg-amber-500/70'
+  if (status === 'gone' || status === 'dns-fail' || status === 'blocked' || status === 'refused') return 'bg-red-500/70'
+  return 'bg-neutral-600'
+}
+
+function categoryEndpoints(subject) {
+  if (!monitorData.value?.endpoints) return []
+  return monitorData.value.endpoints.filter(ep => ep.category === subject)
+}
 
 const scopeStats = [
   { value: '13 of 13', label: 'Federal statistical agencies lost staff — no exceptions' },
