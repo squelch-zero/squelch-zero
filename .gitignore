@@ -31,3 +31,6 @@ INIT.md
 # Private workspace
 memory/
 .claude/
+
+# Raw data files (too large for git)
+data/
