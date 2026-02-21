@@ -142,5 +142,149 @@
         "responseMs": 10149
       }
     ]
+  },
+  {
+    "timestamp": "2026-02-21T17:00:34.824Z",
+    "summary": {
+      "total": 22,
+      "live": 13,
+      "redirected": 2,
+      "down": 2,
+      "other": 5
+    },
+    "results": [
+      {
+        "id": "noaa-billions",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 2869
+      },
+      {
+        "id": "epa-ghgrp",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 6170
+      },
+      {
+        "id": "climate-gov",
+        "status": "blocked",
+        "statusCode": 403,
+        "responseMs": 7313
+      },
+      {
+        "id": "usda-food-security",
+        "status": "redirected",
+        "statusCode": 200,
+        "responseMs": 7694
+      },
+      {
+        "id": "usda-food-security-data",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 7655
+      },
+      {
+        "id": "epa-endangerment",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 1622
+      },
+      {
+        "id": "epa-ghgrp-data",
+        "status": "gone",
+        "statusCode": 404,
+        "responseMs": 9927
+      },
+      {
+        "id": "nca-2023",
+        "status": "error",
+        "statusCode": null,
+        "responseMs": 10329
+      },
+      {
+        "id": "cdc-prams",
+        "status": "error",
+        "statusCode": null,
+        "responseMs": 10358
+      },
+      {
+        "id": "cdc-nhanes",
+        "status": "error",
+        "statusCode": null,
+        "responseMs": 10502
+      },
+      {
+        "id": "globalchange-gov",
+        "status": "error",
+        "statusCode": null,
+        "responseMs": 10515
+      },
+      {
+        "id": "samhsa-nsduh",
+        "status": "error",
+        "statusCode": null,
+        "responseMs": 10387
+      },
+      {
+        "id": "bls-cpi",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 7814
+      },
+      {
+        "id": "bls-ppi",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 7422
+      },
+      {
+        "id": "bls-jolts",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 2544
+      },
+      {
+        "id": "bls-employment",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 7725
+      },
+      {
+        "id": "bls-cpi-data",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 8444
+      },
+      {
+        "id": "eric",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 1344
+      },
+      {
+        "id": "data-gov",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 461
+      },
+      {
+        "id": "census-data",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 1218
+      },
+      {
+        "id": "doj-ncjrs",
+        "status": "redirected",
+        "statusCode": 200,
+        "responseMs": 2218
+      },
+      {
+        "id": "eia-ieo",
+        "status": "live",
+        "statusCode": 200,
+        "responseMs": 6519
+      }
+    ]
   }
 ]
