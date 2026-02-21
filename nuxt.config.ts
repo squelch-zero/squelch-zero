@@ -7,6 +7,9 @@ export default defineNuxtConfig({
   content: {
     renderer: {
       anchorLinks: true
+    },
+    experimental: {
+      sqliteConnector: 'native'
     }
   },
   site: {

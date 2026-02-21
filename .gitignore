@@ -27,3 +27,7 @@ CLAUDE.md
 CONSTRAINTS.md
 INIT.md
 .env.example
+
+# Private workspace
+memory/
+.claude/
