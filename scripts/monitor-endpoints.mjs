@@ -7,6 +7,7 @@
  */
 
 import { writeFileSync, readFileSync, existsSync } from 'fs'
+import { execSync } from 'child_process'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -96,7 +97,7 @@ const ENDPOINTS = [
     id: 'cdc-nhanes',
     category: 'National nutrition and health',
     name: 'CDC NHANES',
-    url: 'https://www.cdc.gov/nchs/nhanes/index.htm',
+    url: 'https://www.cdc.gov/nchs/nhanes/participant.htm',
     expect: 'live'
   },
   {
@@ -201,6 +202,40 @@ const ENDPOINTS = [
   }
 ]
 
+// Curl fallback for sites that block Node.js fetch (WAF rules)
+function checkWithCurl(url) {
+  try {
+    const output = execSync(
+      `curl -sI -o /dev/null -w "%{http_code}\\n%{url_effective}\\n%{redirect_url}" --max-time ${Math.floor(TIMEOUT_MS / 1000)} -L "${url}"`,
+      { encoding: 'utf-8', timeout: TIMEOUT_MS + 2000 }
+    ).trim()
+    const [statusCode, finalUrl, redirectUrl] = output.split('\n')
+    return {
+      statusCode: parseInt(statusCode, 10),
+      finalUrl: finalUrl || url,
+      redirectUrl: redirectUrl || null,
+      error: null
+    }
+  } catch (err) {
+    return { statusCode: null, finalUrl: null, redirectUrl: null, error: err.message }
+  }
+}
+
+function classifyResult(result, statusCode, redirected) {
+  result.statusCode = statusCode
+  if (statusCode >= 200 && statusCode < 400) {
+    result.status = redirected ? 'redirected' : 'live'
+  } else if (statusCode === 403 || statusCode === 401) {
+    result.status = 'blocked'
+  } else if (statusCode === 404 || statusCode === 410) {
+    result.status = 'gone'
+  } else if (statusCode >= 500) {
+    result.status = 'error'
+  } else {
+    result.status = 'unknown'
+  }
+}
+
 async function checkEndpoint(endpoint) {
   const start = Date.now()
   const result = {
@@ -218,6 +253,8 @@ async function checkEndpoint(endpoint) {
     error: null
   }
 
+  const normalizeUrl = u => u.replace(/\/+$/, '')
+
   try {
     const controller = new AbortController()
     const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS)
@@ -234,39 +271,39 @@ async function checkEndpoint(endpoint) {
     result.responseMs = Date.now() - start
     result.statusCode = response.status
 
-    // Detect redirects (ignore trailing slash normalization)
-    const normalizeUrl = u => u.replace(/\/+$/, '')
     if (normalizeUrl(response.url) !== normalizeUrl(endpoint.url)) {
       result.redirected = true
       result.redirectUrl = response.url
     }
 
-    // Classify status
-    if (response.ok) {
-      result.status = result.redirected ? 'redirected' : 'live'
-    } else if (response.status === 403 || response.status === 401) {
-      result.status = 'blocked'
-    } else if (response.status === 404 || response.status === 410) {
-      result.status = 'gone'
-    } else if (response.status >= 500) {
-      result.status = 'error'
-    } else {
-      result.status = 'unknown'
-    }
+    classifyResult(result, response.status, result.redirected)
   } catch (err) {
+    // Node.js fetch failed — try curl as fallback (handles WAF/TLS issues)
+    const curlResult = checkWithCurl(endpoint.url)
     result.responseMs = Date.now() - start
-    if (err.name === 'AbortError') {
-      result.status = 'timeout'
-      result.error = `No response within ${TIMEOUT_MS}ms`
-    } else if (err.cause?.code === 'ENOTFOUND') {
-      result.status = 'dns-fail'
-      result.error = 'DNS lookup failed — domain may not exist'
-    } else if (err.cause?.code === 'ECONNREFUSED') {
-      result.status = 'refused'
-      result.error = 'Connection refused'
+
+    if (curlResult.statusCode && curlResult.statusCode > 0) {
+      // Curl succeeded where fetch failed
+      if (curlResult.finalUrl && normalizeUrl(curlResult.finalUrl) !== normalizeUrl(endpoint.url)) {
+        result.redirected = true
+        result.redirectUrl = curlResult.finalUrl
+      }
+      classifyResult(result, curlResult.statusCode, result.redirected)
     } else {
-      result.status = 'error'
-      result.error = err.message
+      // Both fetch and curl failed — genuinely unreachable
+      if (err.name === 'AbortError') {
+        result.status = 'timeout'
+        result.error = `No response within ${TIMEOUT_MS}ms`
+      } else if (err.cause?.code === 'ENOTFOUND') {
+        result.status = 'dns-fail'
+        result.error = 'DNS lookup failed — domain may not exist'
+      } else if (err.cause?.code === 'ECONNREFUSED') {
+        result.status = 'refused'
+        result.error = 'Connection refused'
+      } else {
+        result.status = 'timeout'
+        result.error = 'Unreachable (both fetch and curl failed)'
+      }
     }
   }
 
