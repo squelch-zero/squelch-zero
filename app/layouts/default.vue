@@ -6,6 +6,9 @@
           squelch zero
         </NuxtLink>
         <div class="flex items-center gap-4">
+          <NuxtLink to="/extraction" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+            extraction map
+          </NuxtLink>
           <NuxtLink to="/archive" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
             archive
           </NuxtLink>
