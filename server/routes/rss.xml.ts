@@ -1,6 +1,21 @@
 import { Feed } from 'feed'
+import MarkdownIt from 'markdown-it'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 const SITE_URL = 'https://squelch-zero.vercel.app'
+const md = new MarkdownIt({ html: true, linkify: true })
+
+function getArticleHtml(articlePath: string): string {
+  try {
+    const filePath = join(process.cwd(), 'content', `${articlePath.slice(1)}.md`)
+    const raw = readFileSync(filePath, 'utf-8')
+    const body = raw.replace(/^---[\s\S]*?---\n/, '')
+    return md.render(body)
+  } catch {
+    return ''
+  }
+}
 
 export default defineEventHandler(async (event) => {
   const feed = new Feed({
@@ -31,6 +46,7 @@ export default defineEventHandler(async (event) => {
       id: `${SITE_URL}${article.path}`,
       link: `${SITE_URL}${article.path}`,
       description: article.description || '',
+      content: getArticleHtml(article.path),
       date: new Date(article.date),
     })
   }
