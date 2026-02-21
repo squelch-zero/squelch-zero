@@ -9,6 +9,9 @@
           <NuxtLink to="/extraction" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
             extraction map
           </NuxtLink>
+          <NuxtLink to="/vanishing" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+            vanishing point
+          </NuxtLink>
           <NuxtLink to="/archive" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
             archive
           </NuxtLink>
