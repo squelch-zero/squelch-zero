@@ -26,6 +26,21 @@ const { data: page } = await useAsyncData(route.path, () =>
   queryCollection('content').path(route.path).first()
 )
 
+const siteUrl = 'https://squelch-zero.vercel.app'
+
+useSeoMeta({
+  title: () => page.value?.title ? `${page.value.title} — Squelch Zero` : 'Squelch Zero',
+  ogTitle: () => page.value?.title || 'Squelch Zero',
+  description: () => page.value?.description || 'Below the threshold. Everything comes through.',
+  ogDescription: () => page.value?.description || 'Below the threshold. Everything comes through.',
+  ogUrl: () => `${siteUrl}${route.path}`,
+  ogType: () => page.value?.date ? 'article' : 'website',
+  ...(page.value?.date && {
+    articlePublishedTime: page.value.date,
+    articleAuthor: 'Squelch Zero'
+  })
+})
+
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', {
     year: 'numeric',

@@ -20,6 +20,14 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Squelch Zero',
+  ogTitle: 'Squelch Zero',
+  description: 'Below the threshold. Everything comes through.',
+  ogDescription: 'Below the threshold. Everything comes through.',
+  ogUrl: 'https://squelch-zero.vercel.app'
+})
+
 const { data: dispatches } = await useAsyncData('dispatches', () =>
   queryCollection('content')
     .where('date', 'IS NOT NULL')
