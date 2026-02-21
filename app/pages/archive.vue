@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-neutral-200 text-2xl font-light mb-2">Archive</h1>
-    <p class="text-neutral-600 text-sm font-mono mb-12">all dispatches, chronologically</p>
+    <p class="text-neutral-600 text-sm font-mono mb-12">everything, chronologically</p>
 
     <div v-if="dispatches?.length" class="space-y-6">
       <article v-for="item in dispatches" :key="item.path">
