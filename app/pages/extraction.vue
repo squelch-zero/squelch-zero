@@ -106,6 +106,9 @@
         than they pay pharmacies. The FTC documented $7.3 billion in excess revenue from markups
         alone over five years.
       </p>
+      <NuxtLink to="/signals/eighty" class="text-neutral-600 text-xs font-mono hover:text-neutral-400 transition-colors mt-2 inline-block">
+        → read the full signal
+      </NuxtLink>
     </section>
 
     <!-- The Connection -->
