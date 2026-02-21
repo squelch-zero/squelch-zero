@@ -145,12 +145,17 @@
         American Statistical Association, "The Nation's Data at Risk: 2025 Report" (December 2025).
         Bureau of Labor Statistics, shutdown impact statements (November 2025, February 2026).
         Center on Budget and Policy Priorities, "Federal Data Are Disappearing" (2025).
+        Clean Air Task Force, "Understanding the Value of the GHGRP" (2025).
         Environmental Protection Agency, GHGRP reconsideration proposal (September 2025).
+        Environmental Protection Agency, "Final Rule: Rescission of the Greenhouse Gas Endangerment Finding" (February 2026).
         Harvard Law Library Innovation Lab, Data.gov Archive (February 2025).
         KFF, "A Look at Federal Health Data Taken Offline" (2025).
         Nature, federal science workforce analysis (January 2026).
+        NPR, "Climate.gov staff eliminated" (June 2025).
+        NPR, "Climate Assessment Authors Dismissed" (April 2025).
         Richmond Federal Reserve, "Phantom Figures: Missing Data in October" (2025).
         STAT News, CDC NHANES staff elimination (October 2025).
+        The Hill, "Trump administration dismisses scientists working on National Climate Assessment" (April 2025).
         USDA, food security survey termination announcement (September 2025).
       </p>
       <p class="text-neutral-700 text-xs font-mono mt-4 mb-2">last updated</p>
@@ -212,15 +217,38 @@ const blindSpots = [
   {
     subject: 'Industrial emissions',
     status: 'at risk',
-    description: 'The only facility-level accounting of greenhouse gas emissions from U.S. industry. Fifteen years of data from approximately 8,000 facilities. Separately, EPA rescinded the 2009 Greenhouse Gas Endangerment Finding on February 12, 2026 — eliminating the legal foundation for federal greenhouse gas regulation.',
+    description: 'The only facility-level accounting of greenhouse gas emissions from U.S. industry. Fifteen years of data from approximately 8,000 facilities. On February 12, 2026, EPA finalized the rescission of the 2009 Greenhouse Gas Endangerment Finding — eliminating the legal foundation for all federal greenhouse gas regulation.',
     datasets: [
       {
         name: 'Greenhouse Gas Reporting Program',
         agency: 'EPA',
         detail: 'Proposed for elimination September 2025. Comment period closed November 2025. If finalized, no industries would submit reports with 2025 data. EPA claims $2.4 billion in savings for businesses.'
+      },
+      {
+        name: 'Endangerment Finding',
+        agency: 'EPA',
+        detail: 'Rescinded February 12, 2026. The 2009 science-based finding underpinned all federal GHG regulation for 17 years. EPA made zero scientific arguments in the rescission — only legal reinterpretation. Lawsuits filed February 18.'
       }
     ],
-    downstream: ['Climate policy enforcement', 'Environmental justice mapping', 'State emissions tracking', 'Corporate ESG verification']
+    downstream: ['Climate policy enforcement', 'Environmental justice mapping', 'State emissions tracking', 'Corporate ESG verification', 'Vehicle emissions standards', 'Power plant carbon limits']
+  },
+  {
+    subject: 'Climate science infrastructure',
+    status: 'terminated',
+    description: 'The federal government\'s core capacity for climate science communication, assessment, and monitoring has been dismantled. The National Climate Assessment — congressionally mandated since 1990 — and the primary public climate data portal are gone.',
+    datasets: [
+      {
+        name: 'National Climate Assessment',
+        agency: 'USGCRP',
+        detail: 'All 400 scientists working on the next assessment dismissed April 2025. Previous NCA reports taken offline from federal websites. Mandated by the Global Change Research Act of 1990.'
+      },
+      {
+        name: 'Climate.gov',
+        agency: 'NOAA',
+        detail: 'Entire staff fired by May 2025 — science communication and data visualization experts. NOAA\'s primary public portal for climate data went dark.'
+      }
+    ],
+    downstream: ['Federal climate policy', 'State adaptation planning', 'Infrastructure resilience', 'Public climate literacy', 'International climate commitments']
   },
   {
     subject: 'National nutrition and health',
