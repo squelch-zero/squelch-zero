@@ -5,9 +5,14 @@
         <NuxtLink to="/" class="text-neutral-400 font-mono text-sm tracking-wide hover:text-white transition-colors">
           squelch zero
         </NuxtLink>
-        <NuxtLink to="/about" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
-          about
-        </NuxtLink>
+        <div class="flex items-center gap-4">
+          <NuxtLink to="/archive" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+            archive
+          </NuxtLink>
+          <NuxtLink to="/about" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+            about
+          </NuxtLink>
+        </div>
       </div>
     </header>
 

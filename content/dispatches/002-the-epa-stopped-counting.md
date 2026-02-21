@@ -2,6 +2,7 @@
 title: The EPA Stopped Counting
 description: The EPA will no longer calculate the health benefits of air pollution rules. Industry costs still count. Lives saved do not.
 date: 2026-02-20
+tags: [environment]
 ---
 
 On January 15, the Environmental Protection Agency published a final rule amending emissions standards for stationary combustion turbines. Buried inside the regulatory impact analysis was a policy change with no precedent in the agency's 55-year history: the EPA will no longer assign monetary value to the lives saved by air pollution regulations.

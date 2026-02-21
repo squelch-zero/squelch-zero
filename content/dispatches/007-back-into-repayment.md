@@ -2,6 +2,7 @@
 title: Back into Repayment
 description: The Department of Education fired 42% of its student loan staff, froze repayment applications, killed the affordable payment plan, then began garnishing wages from the people who defaulted because the system was broken.
 date: 2026-02-21
+tags: [education]
 ---
 
 On February 21, 2025, the Department of Education removed the online application for income-driven repayment plans from its website. The following week, it removed the paper applications too. Loan servicers were told to halt all processing — new applications, pending applications, recertifications — for at least ninety days.

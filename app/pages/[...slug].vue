@@ -5,6 +5,10 @@
         <time class="text-neutral-600 text-xs font-mono">{{ formatDate(page.date) }}</time>
         <h1 class="text-neutral-100 text-2xl font-light mt-2 leading-snug">{{ page.title }}</h1>
         <p v-if="page.description" class="text-neutral-500 text-sm mt-3 leading-relaxed">{{ page.description }}</p>
+        <div v-if="page.tags?.length" class="flex flex-wrap gap-3 mt-4">
+          <NuxtLink v-for="t in page.tags" :key="t" :to="`/tag/${t}`"
+            class="text-neutral-600 text-xs font-mono hover:text-neutral-400 transition-colors">{{ t }}</NuxtLink>
+        </div>
       </header>
 
       <div class="dispatch-body prose prose-invert prose-neutral max-w-none">

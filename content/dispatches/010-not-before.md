@@ -2,6 +2,7 @@
 title: Not Before
 description: The One Big Beautiful Bill cut $187 billion from SNAP — the largest reduction in the program's history. Then the government shut down and 42 million Americans lost food benefits for the first time in 60 years. A federal judge ordered the administration to pay. The president posted on social media that he would not.
 date: 2026-02-21
+tags: [food, rule-of-law]
 ---
 
 On July 4, 2025, President Trump signed the One Big Beautiful Bill Act. Among its provisions: $187 billion in cuts to the Supplemental Nutrition Assistance Program over ten years. The Congressional Budget Office scored it as a 36 percent reduction by 2034 — larger, proportionally, than the bill's cuts to Medicaid. It was the largest cut to food assistance in the program's history.

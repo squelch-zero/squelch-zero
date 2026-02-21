@@ -2,6 +2,7 @@
 title: Too Easy
 description: An election fraud activist with no emergency management experience was given FEMA's second-most important job. He told Congress it's too easy to get disaster funding.
 date: 2026-02-21
+tags: [appointments, disaster-relief]
 ---
 
 On December 15, 2025, Gregg Phillips reported for duty at the Federal Emergency Management Agency. His title: Associate Administrator for the Office of Response and Recovery. A senior FEMA official described the position as "the second most important role in the agency behind the administrator."

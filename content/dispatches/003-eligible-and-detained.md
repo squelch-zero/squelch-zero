@@ -2,6 +2,7 @@
 title: Eligible and Detained
 description: The government froze refugee green card applications, then began arresting refugees for not having green cards.
 date: 2026-02-20
+tags: [immigration, rule-of-law]
 ---
 
 Under federal law, refugees admitted to the United States must apply for a green card after one year. They cannot apply before one year. The statute is clear on both points.

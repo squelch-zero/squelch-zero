@@ -2,6 +2,7 @@
 title: Non-Essential
 description: The efficiency operation destroyed the government's technical capacity, increased spending, then asked the fired workers to come back.
 date: 2026-02-21
+tags: [doge, federal-workforce]
 ---
 
 At 1 a.m. on March 1, 2025, Thomas Shedd, director of the General Services Administration's Technology Transformation Services, sent an email to the staff of 18F. The office had been deemed "non-critical." It was being eliminated immediately, under direction from the White House.

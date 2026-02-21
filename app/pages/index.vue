@@ -13,9 +13,21 @@
             {{ item.description }}
           </p>
         </NuxtLink>
+        <div v-if="item.tags?.length" class="flex flex-wrap gap-3 mt-2">
+          <NuxtLink v-for="t in item.tags" :key="t" :to="`/tag/${t}`"
+            class="text-neutral-600 text-xs font-mono hover:text-neutral-400 transition-colors">{{ t }}</NuxtLink>
+        </div>
       </article>
     </div>
     <p v-else class="text-neutral-600 font-mono text-sm">signal incoming.</p>
+
+    <div v-if="allTags.length" class="mt-16 pt-8 border-t border-neutral-800/30">
+      <p class="text-neutral-700 text-xs font-mono mb-3">tags</p>
+      <div class="flex flex-wrap gap-3">
+        <NuxtLink v-for="t in allTags" :key="t" :to="`/tag/${t}`"
+          class="text-neutral-600 text-xs font-mono hover:text-neutral-400 transition-colors">{{ t }}</NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -34,6 +46,13 @@ const { data: dispatches } = await useAsyncData('dispatches', () =>
     .order('date', 'DESC')
     .all()
 )
+
+const allTags = computed(() => {
+  if (!dispatches.value) return []
+  const tags = new Set()
+  dispatches.value.forEach(d => d.tags?.forEach(t => tags.add(t)))
+  return [...tags].sort()
+})
 
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', {

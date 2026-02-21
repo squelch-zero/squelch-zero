@@ -2,6 +2,7 @@
 title: The Balloon and the Laser
 description: A military anti-drone weapon shot down a party balloon near El Paso. Then the FAA shut the airport for the first time since 9/11.
 date: 2026-02-20
+tags: [military]
 ---
 
 On the night of February 11, the Federal Aviation Administration closed the airspace over El Paso, Texas. All flights grounded. Medical helicopters diverted 45 miles to Las Cruces, New Mexico. The restriction was set to last ten days — a measure not seen over a major American city since September 11, 2001.

@@ -2,6 +2,7 @@
 title: Not a Law Unto Itself
 description: ICE violated 96 court orders in one month in Minnesota. The DOJ admitted to 52 violations in New Jersey. A judge fined a government attorney $500 a day. The administration's response was to fire the prosecutors judges appointed to replace the ones who quit.
 date: 2026-02-21
+tags: [immigration, rule-of-law]
 ---
 
 In January 2026, U.S. Immigration and Customs Enforcement violated 96 federal court orders in the state of Minnesota. The violations spanned 74 separate cases. The chief judge of the U.S. District Court, Patrick Schiltz — a George W. Bush appointee — compiled the count himself. He said it was almost certainly understated, because the list had been assembled hastily.

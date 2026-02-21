@@ -2,6 +2,7 @@
 title: Corrections to the Record
 description: DOGE accessed 548 million Social Security records to detect fraud. The fraud they committed along the way was called a correction.
 date: 2026-02-21
+tags: [doge, rule-of-law, elections]
 ---
 
 In January 2025, the Department of Government Efficiency was given access to the Social Security Administration's systems. The stated purpose was to detect fraud, waste, and abuse.

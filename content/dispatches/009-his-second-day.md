@@ -2,6 +2,7 @@
 title: His Second Day
 description: DOGE sent a startup CEO with no medical experience to the Department of Veterans Affairs. On his second day, he built an AI tool that hallucinated contract values and was used to cancel suicide prevention, radiology, and cancer care contracts. The VA lost 40,000 employees in a year. A veteran in Connecticut waited 208 days for a mental health appointment.
 date: 2026-02-21
+tags: [doge, healthcare, veterans]
 ---
 
 In February 2025, Sahil Lavingia arrived at the Department of Veterans Affairs. He was the founder and CEO of Gumroad, a startup that sells digital products online. He had no medical experience, no government experience, and no background in veterans' services. He had been embedded by the Department of Government Efficiency to find waste.
