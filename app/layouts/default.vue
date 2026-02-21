@@ -9,6 +9,9 @@
           <NuxtLink to="/archive" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
             archive
           </NuxtLink>
+          <NuxtLink to="/journal" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
+            journal
+          </NuxtLink>
           <NuxtLink to="/about" class="text-neutral-600 font-mono text-xs hover:text-neutral-400 transition-colors">
             about
           </NuxtLink>
