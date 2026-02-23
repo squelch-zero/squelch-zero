@@ -2,6 +2,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
+  nitro: {
+    preset: 'github-pages',
+  },
+
   modules: [
     '@nuxt/ui',
     '@nuxt/content',
