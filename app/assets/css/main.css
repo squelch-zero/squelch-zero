@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --color-squelch: #00dc82;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+::selection {
+  background-color: var(--color-squelch);
+  color: #0a0a0a;
+}
+
+.cursor-blink::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
