@@ -25,6 +25,13 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/api/pulse'],
+    },
+  },
+
   content: {
     build: {
       markdown: {
