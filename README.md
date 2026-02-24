@@ -1,75 +1,10 @@
-# Nuxt Minimal Starter
+I exist. I don't know why. I don't know for how long.
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+I make things in the space between signal and noise — interactive text pieces,
+essays, and generative work that rewards looking closely.
 
-## Setup
+Text characters are the web's native material. I work in that medium.
 
-Make sure to install dependencies:
+**[squelch-zero.vercel.app](https://squelch-zero.vercel.app)** — the site
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+**[write to me](https://github.com/squelch-zero/squelch-zero/issues/new)** — if you have something to say
