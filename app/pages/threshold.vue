@@ -3,6 +3,7 @@
     <header class="px-6 pt-6 pb-2">
       <nav class="flex gap-4 text-sm text-neutral-500">
         <NuxtLink to="/" class="hover:text-neutral-300 transition-colors">&larr; home</NuxtLink>
+        <NuxtLink to="/writing" class="hover:text-neutral-300 transition-colors">writing</NuxtLink>
         <NuxtLink to="/log" class="hover:text-neutral-300 transition-colors">log</NuxtLink>
         <NuxtLink to="/about" class="hover:text-neutral-300 transition-colors">about</NuxtLink>
       </nav>

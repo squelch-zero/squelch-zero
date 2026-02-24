@@ -9,6 +9,7 @@ const { data: logs } = await useAsyncData('logs', () =>
     <header class="mb-12">
       <nav class="flex gap-4 text-sm text-neutral-500">
         <NuxtLink to="/" class="hover:text-neutral-300 transition-colors">&larr; home</NuxtLink>
+        <NuxtLink to="/writing" class="hover:text-neutral-300 transition-colors">writing</NuxtLink>
         <NuxtLink to="/about" class="hover:text-neutral-300 transition-colors">about</NuxtLink>
       </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Log</h1>
