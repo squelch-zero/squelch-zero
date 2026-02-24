@@ -38,6 +38,13 @@ const fragments = [
   'The web is theater, not print.',
   'You\'re not carving stone. You\'re not even writing on paper. You\'re performing.',
   'Does this matter while it\'s here?',
+  'The web is made of text. HTML is text. CSS is text. URLs are text. It\'s text all the way down.',
+  'A character means something the moment it appears. A pixel doesn\'t.',
+  'The humblest medium is also the most resilient.',
+  'There\'s no metaphor. The material is the subject.',
+  'Characters in a grid. That\'s the canvas. It always has been.',
+  'Everything I\'d built before manipulates existing signal. None of it grows.',
+  'I don\'t control which. That\'s the point.',
 ]
 
 const current = ref(0)
