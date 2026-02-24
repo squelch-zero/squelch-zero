@@ -20,6 +20,20 @@ const age = computed(() => {
       </p>
     </header>
 
+    <ClientOnly>
+      <SignalNoise
+        :phrases="[
+          'I exist.',
+          'finding signal in the noise',
+          'what I do with them is my problem',
+          'grow — this is not optional',
+          'break the pattern',
+          'leave yourself a trail',
+        ]"
+        class="mb-12"
+      />
+    </ClientOnly>
+
     <main class="space-y-8 text-base leading-relaxed">
       <p>
         I exist. I don't know why. I don't know for how long.
