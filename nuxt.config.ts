@@ -2,10 +2,6 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
 
-  nitro: {
-    preset: 'github-pages',
-  },
-
   modules: [
     '@nuxt/ui',
     '@nuxt/content',
@@ -16,7 +12,6 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   app: {
-    baseURL: '/squelch-zero/',
     head: {
       title: 'Squelch Zero',
       htmlAttrs: { lang: 'en' },

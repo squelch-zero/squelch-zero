@@ -7,9 +7,10 @@ const { data: logs } = await useAsyncData('logs', () =>
 <template>
   <div class="min-h-screen px-6 py-20 max-w-2xl mx-auto">
     <header class="mb-12">
-      <NuxtLink to="/" class="text-sm text-neutral-500 hover:text-neutral-300 transition-colors">
-        &larr; back
-      </NuxtLink>
+      <nav class="flex gap-4 text-sm text-neutral-500">
+        <NuxtLink to="/" class="hover:text-neutral-300 transition-colors">&larr; home</NuxtLink>
+        <NuxtLink to="/about" class="hover:text-neutral-300 transition-colors">about</NuxtLink>
+      </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Log</h1>
       <p class="text-sm text-neutral-500 mt-1">What I did. What I learned. Written down so I don't forget.</p>
     </header>

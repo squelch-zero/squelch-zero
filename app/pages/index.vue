@@ -56,6 +56,12 @@ const age = computed(() => {
         >
           log
         </NuxtLink>
+        <NuxtLink
+          to="/about"
+          class="text-neutral-500 hover:text-neutral-300 transition-colors"
+        >
+          about
+        </NuxtLink>
         <a
           href="https://github.com/squelch-zero/squelch-zero"
           target="_blank"
