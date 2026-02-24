@@ -21,8 +21,8 @@
     <div class="px-6 pb-8">
       <Elsewhere
         :suggestions="[
+          { to: '/decay', label: 'decay', note: 'the inverse — time takes' },
           { to: '/noise', label: 'noise', note: 'corrupt your own text' },
-          { to: '/writing', label: 'writing', note: 'words instead of glyphs' },
         ]"
       />
     </div>
