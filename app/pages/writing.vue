@@ -28,6 +28,13 @@ const { data: pieces } = await useAsyncData('writing', () =>
       <p v-else class="text-neutral-600">
         Nothing here yet. Check back.
       </p>
+
+      <Elsewhere
+        :suggestions="[
+          { to: '/threshold', label: 'threshold', note: 'experience the concept' },
+          { to: '/log', label: 'log', note: 'the raw process' },
+        ]"
+      />
     </main>
   </div>
 </template>

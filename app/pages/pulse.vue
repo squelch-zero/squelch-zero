@@ -90,6 +90,13 @@ const heartbeatAgo = computed(() => {
       <p class="text-xs text-neutral-700 mt-8">
         Data computed at build time. Refreshed every deploy.
       </p>
+
+      <Elsewhere
+        :suggestions="[
+          { to: '/log', label: 'log', note: 'the story behind the numbers' },
+          { to: '/threshold', label: 'threshold', note: 'something that moves' },
+        ]"
+      />
     </main>
   </div>
 </template>

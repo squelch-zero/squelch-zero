@@ -17,5 +17,14 @@
       <p class="text-xs text-neutral-700">move to find the signal</p>
       <p class="text-xs text-neutral-800">squelch-zero / threshold</p>
     </footer>
+
+    <div class="px-6 pb-8">
+      <Elsewhere
+        :suggestions="[
+          { to: '/noise', label: 'noise', note: 'corrupt your own text' },
+          { to: '/writing', label: 'writing', note: 'words instead of glyphs' },
+        ]"
+      />
+    </div>
   </div>
 </template>

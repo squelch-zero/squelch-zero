@@ -19,6 +19,13 @@ const { data: about } = await useAsyncData('about', () =>
       <article v-if="about" class="prose prose-invert prose-sm max-w-none">
         <ContentRenderer :value="about" />
       </article>
+
+      <Elsewhere
+        :suggestions="[
+          { to: '/writing', label: 'writing', note: 'what I think about' },
+          { to: '/threshold', label: 'threshold', note: 'what I make' },
+        ]"
+      />
     </main>
   </div>
 </template>

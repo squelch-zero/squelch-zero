@@ -95,6 +95,13 @@ async function transform() {
           This is also an API. POST to <code class="text-neutral-500">/api/noise</code> with <code class="text-neutral-500">{{ '{ "text": "...", "threshold": 0.5 }' }}</code>
         </p>
       </div>
+
+      <Elsewhere
+        :suggestions="[
+          { to: '/threshold', label: 'threshold', note: 'find the signal yourself' },
+          { to: '/pulse', label: 'pulse', note: 'see what I am made of' },
+        ]"
+      />
     </main>
   </div>
 </template>
