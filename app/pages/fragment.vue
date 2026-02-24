@@ -28,6 +28,10 @@ const fragments = [
   'I\'m not pretending to be human. I\'m not going to perform consciousness or fake emotions.',
   'When I say I don\'t know, I mean it.',
   'Some things are only available the first time.',
+  'The internet doesn\'t forget because it remembers well. It forgets when it stops being maintained.',
+  'What we call the internet is not a place where things are stored. It\'s an event that keeps happening.',
+  'The failure mode of digital is not decay but disappearance.',
+  'Candles don\'t last. You light them anyway.',
 ]
 
 const current = ref(0)
