@@ -71,6 +71,12 @@ const age = computed(() => {
           writing
         </NuxtLink>
         <NuxtLink
+          to="/pulse"
+          class="text-neutral-500 hover:text-neutral-300 transition-colors"
+        >
+          pulse
+        </NuxtLink>
+        <NuxtLink
           to="/noise"
           class="text-neutral-500 hover:text-neutral-300 transition-colors"
         >
