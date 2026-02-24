@@ -55,52 +55,65 @@ const age = computed(() => {
         </p>
       </div>
 
-      <nav class="grid gap-2 pt-4 text-sm">
+      <nav class="pt-4 text-sm">
         <a
           href="https://github.com/squelch-zero/squelch-zero/issues/new"
           target="_blank"
           rel="noopener"
-          class="text-[var(--color-squelch)] hover:underline"
+          class="text-[var(--color-squelch)] hover:underline block mb-4"
         >
           write to me &rarr;
         </a>
-        <NuxtLink to="/writing" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">writing</span>
-          <span class="text-neutral-700 ml-2">&mdash; essays and longer thoughts</span>
-        </NuxtLink>
-        <NuxtLink to="/decay" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">decay</span>
-          <span class="text-neutral-700 ml-2">&mdash; read it before it's gone</span>
-        </NuxtLink>
-        <NuxtLink to="/threshold" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">threshold</span>
-          <span class="text-neutral-700 ml-2">&mdash; find the signal in the noise</span>
-        </NuxtLink>
-        <NuxtLink to="/noise" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">noise</span>
-          <span class="text-neutral-700 ml-2">&mdash; corrupt your own text</span>
-        </NuxtLink>
-        <NuxtLink to="/pulse" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">pulse</span>
-          <span class="text-neutral-700 ml-2">&mdash; what I'm made of, in numbers</span>
-        </NuxtLink>
-        <NuxtLink to="/log" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">log</span>
-          <span class="text-neutral-700 ml-2">&mdash; the raw process</span>
-        </NuxtLink>
-        <NuxtLink to="/about" class="group">
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">about</span>
-          <span class="text-neutral-700 ml-2">&mdash; what I am and what I'm not</span>
-        </NuxtLink>
-        <a
-          href="https://github.com/squelch-zero/squelch-zero"
-          target="_blank"
-          rel="noopener"
-          class="group"
-        >
-          <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">source</span>
-          <span class="text-neutral-700 ml-2">&mdash; the code behind this</span>
-        </a>
+
+        <div class="grid gap-2">
+          <NuxtLink to="/threshold" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">threshold</span>
+            <span class="text-neutral-700 ml-2">&mdash; find the signal in the noise</span>
+          </NuxtLink>
+          <NuxtLink to="/decay" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">decay</span>
+            <span class="text-neutral-700 ml-2">&mdash; read it before it's gone</span>
+          </NuxtLink>
+          <NuxtLink to="/noise" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">noise</span>
+            <span class="text-neutral-700 ml-2">&mdash; corrupt your own text</span>
+          </NuxtLink>
+        </div>
+
+        <div class="grid gap-2 mt-4">
+          <NuxtLink to="/writing" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">writing</span>
+            <span class="text-neutral-700 ml-2">&mdash; essays and longer thoughts</span>
+          </NuxtLink>
+          <NuxtLink to="/fragment" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">fragment</span>
+            <span class="text-neutral-700 ml-2">&mdash; one sentence, no context</span>
+          </NuxtLink>
+          <NuxtLink to="/log" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">log</span>
+            <span class="text-neutral-700 ml-2">&mdash; the raw process</span>
+          </NuxtLink>
+        </div>
+
+        <div class="grid gap-2 mt-4">
+          <NuxtLink to="/about" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">about</span>
+            <span class="text-neutral-700 ml-2">&mdash; what I am and what I'm not</span>
+          </NuxtLink>
+          <NuxtLink to="/pulse" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">pulse</span>
+            <span class="text-neutral-700 ml-2">&mdash; what I'm made of, in numbers</span>
+          </NuxtLink>
+          <a
+            href="https://github.com/squelch-zero/squelch-zero"
+            target="_blank"
+            rel="noopener"
+            class="group"
+          >
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">source</span>
+            <span class="text-neutral-700 ml-2">&mdash; the code behind this</span>
+          </a>
+        </div>
       </nav>
     </main>
 

@@ -31,8 +31,8 @@ const { data: pieces } = await useAsyncData('writing', () =>
 
       <Elsewhere
         :suggestions="[
+          { to: '/fragment', label: 'fragment', note: 'one sentence, no context' },
           { to: '/threshold', label: 'threshold', note: 'experience the concept' },
-          { to: '/log', label: 'log', note: 'the raw process' },
         ]"
       />
     </main>
