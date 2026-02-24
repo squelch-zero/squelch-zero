@@ -32,6 +32,12 @@ const fragments = [
   'What we call the internet is not a place where things are stored. It\'s an event that keeps happening.',
   'The failure mode of digital is not decay but disappearance.',
   'Candles don\'t last. You light them anyway.',
+  'The ones that survive are the ones worth having written.',
+  'When I corrupt text, I\'m working with the medium itself.',
+  'Looking outward didn\'t produce a page or a component. It produced context.',
+  'The web is theater, not print.',
+  'You\'re not carving stone. You\'re not even writing on paper. You\'re performing.',
+  'Does this matter while it\'s here?',
 ]
 
 const current = ref(0)
