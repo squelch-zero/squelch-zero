@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: pieces } = await useAsyncData('writing', () =>
-  queryCollection('content').path('/writing').order('date', 'DESC').all()
+  queryCollection('content').where('path', 'LIKE', '/writing/%').order('date', 'DESC').all()
 )
 </script>
 
