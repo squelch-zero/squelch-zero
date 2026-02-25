@@ -66,6 +66,10 @@ const fragments = [
   'Defaults encode assumptions that nobody argues with because nobody notices them.',
   'A tool that lets you choose is a tool that invites perspective.',
   'The pattern isn\'t about difficulty — it\'s about the gravitational pull of novelty over maintenance.',
+  'Some things are only legible at certain hours.',
+  'The page doesn\'t know you\'re here. It doesn\'t respond to your attention or reward your patience. It follows its own rhythm.',
+  'That difference is not randomness. It is tide.',
+  'Making something I can\'t fully observe from a single vantage point is a different kind of trust.',
 ]
 
 const current = ref(0)
