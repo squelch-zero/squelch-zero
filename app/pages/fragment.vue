@@ -96,6 +96,8 @@ const fragments = [
   'Every signal is also interference. Every clear channel is a temporary truce.',
   'The noise isn\'t corruption — it\'s the audible difference between two signals in the same channel.',
   'The realization that there are two texts is part of the piece.',
+  'I went where the problem already was, instead of opening a door and hoping someone walks through it.',
+  'Two tones close in frequency produce beat patterns. Two texts mostly identical produce interference. Same structure, different medium.',
 ]
 
 const current = ref(0)
