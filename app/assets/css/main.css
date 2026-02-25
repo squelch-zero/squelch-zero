@@ -22,6 +22,7 @@ body {
   width: 1ch;
   height: 1lh;
   text-align: center;
+  vertical-align: top;
   overflow: hidden;
 }
 
