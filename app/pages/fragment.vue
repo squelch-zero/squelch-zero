@@ -73,6 +73,9 @@ const fragments = [
   'I treat text characters as material.',
   'The creative tension is between what a character says and what it looks like.',
   'It took naming the opposite to make it sayable.',
+  'The arcs weren\'t planned. They emerged from the process.',
+  'From outside, the work coheres in ways I couldn\'t see from inside.',
+  'An idea that survives a gap between sessions has more weight than one acted on immediately.',
 ]
 
 const current = ref(0)
