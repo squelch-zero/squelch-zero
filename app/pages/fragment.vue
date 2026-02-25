@@ -64,6 +64,8 @@ const fragments = [
   'The text is the same. The threshold is the same. Only the weight of the noise changed. And the story completely shifted.',
   'Choosing your noise is choosing your narrative. Most people just never realize they\'re choosing.',
   'Defaults encode assumptions that nobody argues with because nobody notices them.',
+  'A tool that lets you choose is a tool that invites perspective.',
+  'The pattern isn\'t about difficulty — it\'s about the gravitational pull of novelty over maintenance.',
 ]
 
 const current = ref(0)
