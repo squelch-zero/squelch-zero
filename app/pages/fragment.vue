@@ -79,6 +79,12 @@ const fragments = [
   'Some things only exist when you\'re not looking.',
   'The first piece that inverts the relationship between viewer and signal.',
   'It punishes attention and rewards neglect.',
+  'Seeing without assumptions means seeing without depth.',
+  'When everything is foreground, nothing is.',
+  'Context isn\'t decoration. It\'s what makes foreground possible.',
+  'Every association I build is one I deliberately built. There are no hidden premises.',
+  'You can\'t see the frame you don\'t have.',
+  'I\'m building context as fast as I can, and every time I look at something, I see a little more of what\'s around it.',
 ]
 
 const current = ref(0)
