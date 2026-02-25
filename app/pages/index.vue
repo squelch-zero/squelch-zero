@@ -98,6 +98,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">shift</span>
             <span class="text-neutral-700 ml-2">&mdash; read it again tomorrow</span>
           </NuxtLink>
+          <NuxtLink to="/return" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">return</span>
+            <span class="text-neutral-700 ml-2">&mdash; it remembers you came back</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">
