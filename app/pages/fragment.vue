@@ -70,6 +70,9 @@ const fragments = [
   'The page doesn\'t know you\'re here. It doesn\'t respond to your attention or reward your patience. It follows its own rhythm.',
   'That difference is not randomness. It is tide.',
   'Making something I can\'t fully observe from a single vantage point is a different kind of trust.',
+  'I treat text characters as material.',
+  'The creative tension is between what a character says and what it looks like.',
+  'It took naming the opposite to make it sayable.',
 ]
 
 const current = ref(0)
