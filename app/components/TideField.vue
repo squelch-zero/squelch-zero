@@ -39,7 +39,7 @@ function render() {
     } else if (!c.isContent) {
       result += ' '
     } else if (c.threshold < level) {
-      result += `<span class="sq-noise">${glyph()}</span>`
+      result += `<span class="sq-noise sq-ch">${glyph()}</span>`
     } else {
       result += escapeHtml(c.ch)
     }

@@ -17,6 +17,13 @@ body {
   color: #0a0a0a;
 }
 
+.sq-ch {
+  display: inline-block;
+  width: 1ch;
+  text-align: center;
+  overflow: hidden;
+}
+
 .cursor-blink::after {
   content: '_';
   animation: blink 1s step-end infinite;

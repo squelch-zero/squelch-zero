@@ -89,7 +89,7 @@ function render() {
         }
       }
 
-      result += glyph()
+      result += `<span class="sq-ch">${glyph()}</span>`
     }
     if (r < rows - 1) result += '\n'
   }

@@ -96,12 +96,12 @@ function render() {
         const elapsed = now - cell.decayAt
         const progress = Math.min(1, elapsed / cell.decayDuration)
         if (Math.random() < progress ** 1.5) {
-          result += `<span class="sq-noise">${glyph()}</span>`
+          result += `<span class="sq-noise sq-ch">${glyph()}</span>`
         } else {
           result += `<span class="sq-signal">${escapeHtml(cell.ch)}</span>`
         }
       } else {
-        result += `<span class="sq-noise">${escapeHtml(cell.ch)}</span>`
+        result += `<span class="sq-noise sq-ch">${escapeHtml(cell.ch)}</span>`
       }
     }
     if (r < rows - 1) result += '\n'

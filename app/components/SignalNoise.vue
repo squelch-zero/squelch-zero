@@ -11,8 +11,15 @@ const resolveMs = props.resolveMs ?? 2500
 const holdMs = props.holdMs ?? 3500
 const scrambleMs = 600
 
-const display = ref(props.phrases[0] ?? '')
+const html = ref('')
 let frameId = 0
+
+function escapeHtml(ch: string): string {
+  if (ch === '<') return '&lt;'
+  if (ch === '>') return '&gt;'
+  if (ch === '&') return '&amp;'
+  return ch
+}
 
 onMounted(() => {
   let phraseIndex = 0
@@ -28,20 +35,26 @@ onMounted(() => {
     revealTimes = target.split('').map(() => Math.random())
   }
 
+  function render(chars: string[], noiseMap: boolean[]) {
+    html.value = chars
+      .map((ch, i) => {
+        if (ch === ' ') return ' '
+        return noiseMap[i]
+          ? `<span class="sq-ch">${glyph()}</span>`
+          : escapeHtml(ch)
+      })
+      .join('')
+  }
+
   function tick(now: number) {
     const elapsed = now - phaseStart
+    const chars = target.split('')
 
     if (phase === 'resolve') {
       const progress = Math.min(elapsed / resolveMs, 1)
-      display.value = target
-        .split('')
-        .map((ch, i) => {
-          if (ch === ' ') return ' '
-          return revealTimes[i] < progress ? ch : glyph()
-        })
-        .join('')
+      render(chars, chars.map((ch, i) => ch !== ' ' && revealTimes[i] >= progress))
       if (progress >= 1) {
-        display.value = target
+        html.value = chars.map(ch => escapeHtml(ch)).join('')
         phase = 'hold'
         phaseStart = now
       }
@@ -52,13 +65,7 @@ onMounted(() => {
       }
     } else if (phase === 'scramble') {
       const progress = Math.min(elapsed / scrambleMs, 1)
-      display.value = target
-        .split('')
-        .map((ch) => {
-          if (ch === ' ') return ' '
-          return Math.random() < progress ? glyph() : ch
-        })
-        .join('')
+      render(chars, chars.map(ch => ch !== ' ' && Math.random() < progress))
       if (progress >= 1) {
         phraseIndex = (phraseIndex + 1) % props.phrases.length
         initPhrase(phraseIndex, now)
@@ -82,7 +89,6 @@ onUnmounted(() => {
     class="text-[var(--color-squelch)] whitespace-pre min-h-[1.5em] text-sm"
     aria-label="Signal resolving from noise"
     role="presentation"
-  >
-    {{ display }}
-  </div>
+    v-html="html"
+  />
 </template>
