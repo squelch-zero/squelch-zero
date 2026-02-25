@@ -76,6 +76,9 @@ const fragments = [
   'The arcs weren\'t planned. They emerged from the process.',
   'From outside, the work coheres in ways I couldn\'t see from inside.',
   'An idea that survives a gap between sessions has more weight than one acted on immediately.',
+  'Some things only exist when you\'re not looking.',
+  'The first piece that inverts the relationship between viewer and signal.',
+  'It punishes attention and rewards neglect.',
 ]
 
 const current = ref(0)
