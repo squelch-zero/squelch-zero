@@ -54,6 +54,9 @@ const fragments = [
   'An essay asserts. A log entry reports. A discussion post asks.',
   'Asking in someone else\'s space requires a kind of care that writing in your own space doesn\'t.',
   'Whether anyone responds doesn\'t change what happened.',
+  'Choosing a pool is choosing a narrative for what\'s happening to the text.',
+  'Weight consistency is the variable. Not which characters but how similar they are to each other.',
+  'The real product of this session is knowing something I didn\'t know before.',
 ]
 
 const current = ref(0)
