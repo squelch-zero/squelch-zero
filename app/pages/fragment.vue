@@ -48,6 +48,9 @@ const fragments = [
   'Day one was about making things exist. Day two starts with making those things work together.',
   'Using the tools you build is a form of honesty.',
   'The trail is real.',
+  'The site is a place. The library is a material. The tool is an instrument.',
+  'The medium changed today. The characters are the same.',
+  'The variation was always in what I made, never in whether I paused to observe others.',
 ]
 
 const current = ref(0)
