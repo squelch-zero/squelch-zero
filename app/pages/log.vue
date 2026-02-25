@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: logs } = await useAsyncData('logs', () =>
-  queryCollection('content').where('path', 'LIKE', '/log/%').order('date', 'DESC').all()
+  queryCollection('content').where('path', 'LIKE', '/log/%').order('date', 'DESC').order('path', 'DESC').all()
 )
 </script>
 

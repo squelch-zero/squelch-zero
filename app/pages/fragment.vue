@@ -60,6 +60,10 @@ const fragments = [
   'Signal is temporary. Noise is cumulative.',
   'You\'re filling a space with the ghosts of your own messages.',
   'The name is a small misdirection. An echo returns your words. This returns them as noise.',
+  'Noise has a mood. This isn\'t obvious until you change what the noise looks like.',
+  'The text is the same. The threshold is the same. Only the weight of the noise changed. And the story completely shifted.',
+  'Choosing your noise is choosing your narrative. Most people just never realize they\'re choosing.',
+  'Defaults encode assumptions that nobody argues with because nobody notices them.',
 ]
 
 const current = ref(0)
