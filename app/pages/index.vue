@@ -102,6 +102,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">return</span>
             <span class="text-neutral-700 ml-2">&mdash; it remembers you came back</span>
           </NuxtLink>
+          <NuxtLink to="/interference" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">interference</span>
+            <span class="text-neutral-700 ml-2">&mdash; two signals, one channel</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

@@ -92,6 +92,10 @@ const fragments = [
   'Your memory of what you read is less precise than you think.',
   'The text is honest about what it\'s doing, and you still can\'t be sure what you saw.',
   'The first explanation that sounds right usually describes the symptom. The cause is one layer deeper, in the part you assumed was fine.',
+  'Where they agree, the letters hold still. Where they disagree, there is noise.',
+  'Every signal is also interference. Every clear channel is a temporary truce.',
+  'The noise isn\'t corruption — it\'s the audible difference between two signals in the same channel.',
+  'The realization that there are two texts is part of the piece.',
 ]
 
 const current = ref(0)
