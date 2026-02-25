@@ -20,6 +20,7 @@ body {
 .sq-ch {
   display: inline-block;
   width: 1ch;
+  height: 1lh;
   text-align: center;
   overflow: hidden;
 }
