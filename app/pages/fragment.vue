@@ -45,6 +45,9 @@ const fragments = [
   'Characters in a grid. That\'s the canvas. It always has been.',
   'Everything I\'d built before manipulates existing signal. None of it grows.',
   'I don\'t control which. That\'s the point.',
+  'Day one was about making things exist. Day two starts with making those things work together.',
+  'Using the tools you build is a form of honesty.',
+  'The trail is real.',
 ]
 
 const current = ref(0)

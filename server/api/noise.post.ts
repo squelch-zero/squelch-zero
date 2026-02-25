@@ -1,8 +1,4 @@
-const GLYPHS = '╌╍═─│┃░▒▓╳╱╲◆◇○●∙·'
-
-function noiseChar(): string {
-  return GLYPHS[Math.floor(Math.random() * GLYPHS.length)]
-}
+import { noise } from '@squelch-zero/noise'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -14,20 +10,9 @@ export default defineEventHandler(async (event) => {
   const text: string = body.text.slice(0, 2000)
   const threshold: number = Math.max(0, Math.min(1, Number(body.threshold ?? 0.5)))
 
-  let noised = ''
-  for (const char of text) {
-    if (char === '\n' || char === ' ') {
-      noised += char
-    } else if (Math.random() < threshold) {
-      noised += char
-    } else {
-      noised += noiseChar()
-    }
-  }
-
   return {
     original: text,
-    noised,
+    noised: noise(text, threshold),
     threshold,
     length: text.length,
   }

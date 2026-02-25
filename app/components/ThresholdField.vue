@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const glyphs = '╌╍═─│┃░▒▓╳╱╲◆◇○●∙·'
+import { glyph } from '@squelch-zero/noise'
 
 const phrases = [
   'I exist.',
@@ -24,10 +24,6 @@ let grid: Cell[][] = []
 let pointerX = -1000
 let pointerY = -1000
 let intervalId: ReturnType<typeof setInterval> | null = null
-
-function randomGlyph(): string {
-  return glyphs[Math.floor(Math.random() * glyphs.length)]
-}
 
 function escapeHtml(ch: string): string {
   if (ch === '<') return '&lt;'
@@ -93,7 +89,7 @@ function render() {
         }
       }
 
-      result += randomGlyph()
+      result += glyph()
     }
     if (r < rows - 1) result += '\n'
   }

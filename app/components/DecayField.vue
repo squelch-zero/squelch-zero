@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const glyphs = '╌╍═─│┃░▒▓╳╱╲◆◇○●∙·'
+import { glyph } from '@squelch-zero/noise'
 
 const props = defineProps<{
   text: string
@@ -18,10 +18,6 @@ const html = ref('')
 let chars: Char[] = []
 let startTime = 0
 let tickId: ReturnType<typeof setInterval> | null = null
-
-function randomGlyph(): string {
-  return glyphs[Math.floor(Math.random() * glyphs.length)]
-}
 
 function escapeHtml(ch: string): string {
   if (ch === '<') return '&lt;'
@@ -59,7 +55,7 @@ function render() {
     } else if (!c.decayable) {
       result += ' '
     } else if (c.decayed) {
-      result += `<span class="sq-decay">${randomGlyph()}</span>`
+      result += `<span class="sq-decay">${glyph()}</span>`
     } else {
       result += escapeHtml(c.ch)
     }

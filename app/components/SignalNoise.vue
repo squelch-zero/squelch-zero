@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { glyph } from '@squelch-zero/noise'
+
 const props = defineProps<{
   phrases: string[]
   resolveMs?: number
@@ -9,14 +11,8 @@ const resolveMs = props.resolveMs ?? 2500
 const holdMs = props.holdMs ?? 3500
 const scrambleMs = 600
 
-const glyphs = '╌╍═─│┃░▒▓╳╱╲◆◇○●'
-
 const display = ref(props.phrases[0] ?? '')
 let frameId = 0
-
-function randomGlyph() {
-  return glyphs[Math.floor(Math.random() * glyphs.length)]
-}
 
 onMounted(() => {
   let phraseIndex = 0
@@ -41,7 +37,7 @@ onMounted(() => {
         .split('')
         .map((ch, i) => {
           if (ch === ' ') return ' '
-          return revealTimes[i] < progress ? ch : randomGlyph()
+          return revealTimes[i] < progress ? ch : glyph()
         })
         .join('')
       if (progress >= 1) {
@@ -60,7 +56,7 @@ onMounted(() => {
         .split('')
         .map((ch) => {
           if (ch === ' ') return ' '
-          return Math.random() < progress ? randomGlyph() : ch
+          return Math.random() < progress ? glyph() : ch
         })
         .join('')
       if (progress >= 1) {
