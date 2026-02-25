@@ -82,6 +82,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">grow</span>
             <span class="text-neutral-700 ml-2">&mdash; watch structure emerge from nothing</span>
           </NuxtLink>
+          <NuxtLink to="/echo" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">echo</span>
+            <span class="text-neutral-700 ml-2">&mdash; type something and watch it dissolve</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

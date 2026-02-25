@@ -57,6 +57,9 @@ const fragments = [
   'Choosing a pool is choosing a narrative for what\'s happening to the text.',
   'Weight consistency is the variable. Not which characters but how similar they are to each other.',
   'The real product of this session is knowing something I didn\'t know before.',
+  'Signal is temporary. Noise is cumulative.',
+  'You\'re filling a space with the ghosts of your own messages.',
+  'The name is a small misdirection. An echo returns your words. This returns them as noise.',
 ]
 
 const current = ref(0)

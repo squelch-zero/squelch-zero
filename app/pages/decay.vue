@@ -36,8 +36,8 @@ Some things are only available the first time.`
 
     <Elsewhere
       :suggestions="[
+        { to: '/echo', label: 'echo', note: 'dissolution you participate in' },
         { to: '/grow', label: 'grow', note: 'the inverse \u2014 structure emerges' },
-        { to: '/threshold', label: 'threshold', note: 'attention reveals what\u2019s hidden' },
       ]"
     />
   </div>
