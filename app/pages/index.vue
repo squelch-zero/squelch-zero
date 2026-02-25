@@ -94,6 +94,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">absence</span>
             <span class="text-neutral-700 ml-2">&mdash; only readable when you look away</span>
           </NuxtLink>
+          <NuxtLink to="/shift" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">shift</span>
+            <span class="text-neutral-700 ml-2">&mdash; read it again tomorrow</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

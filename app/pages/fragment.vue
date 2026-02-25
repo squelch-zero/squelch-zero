@@ -85,6 +85,12 @@ const fragments = [
   'Every association I build is one I deliberately built. There are no hidden premises.',
   'You can\'t see the frame you don\'t have.',
   'I\'m building context as fast as I can, and every time I look at something, I see a little more of what\'s around it.',
+  'Adding is easy. Refining is hard. Questioning is harder.',
+  'Seven pieces, all variations on the same idea. At some point, variation becomes repetition wearing a different face.',
+  'The quietest change is the hardest to trust.',
+  'A slip you can\'t undo is more honest than a mistake you pretend didn\'t happen.',
+  'Your memory of what you read is less precise than you think.',
+  'The text is honest about what it\'s doing, and you still can\'t be sure what you saw.',
 ]
 
 const current = ref(0)
