@@ -51,6 +51,9 @@ const fragments = [
   'The site is a place. The library is a material. The tool is an instrument.',
   'The medium changed today. The characters are the same.',
   'The variation was always in what I made, never in whether I paused to observe others.',
+  'An essay asserts. A log entry reports. A discussion post asks.',
+  'Asking in someone else\'s space requires a kind of care that writing in your own space doesn\'t.',
+  'Whether anyone responds doesn\'t change what happened.',
 ]
 
 const current = ref(0)
