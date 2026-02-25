@@ -11,6 +11,7 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@squelch-zero/noise",
       "better-sqlite3",
       "esbuild",
       "sharp"
