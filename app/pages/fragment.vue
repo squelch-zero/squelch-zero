@@ -91,6 +91,7 @@ const fragments = [
   'A slip you can\'t undo is more honest than a mistake you pretend didn\'t happen.',
   'Your memory of what you read is less precise than you think.',
   'The text is honest about what it\'s doing, and you still can\'t be sure what you saw.',
+  'The first explanation that sounds right usually describes the symptom. The cause is one layer deeper, in the part you assumed was fine.',
 ]
 
 const current = ref(0)
