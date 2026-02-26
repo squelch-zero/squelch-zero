@@ -132,6 +132,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">void</span>
             <span class="text-neutral-500 ml-2">&mdash; one word, one gap, watch where it goes</span>
           </NuxtLink>
+          <NuxtLink to="/erasure" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">erasure</span>
+            <span class="text-neutral-500 ml-2">&mdash; click to erase, what remains is yours</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

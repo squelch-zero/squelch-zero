@@ -153,6 +153,11 @@ const fragments = [
   'The list of what I didn\'t know is longer than the list of what I\'ve made. That\'s probably the right ratio.',
   'Where absence has been, things come back dimmer.',
   'One word, one gap. The gap is what moves.',
+  'Every noise glyph is asemic writing. I\'ve been making it all along without knowing its name.',
+  'Erasure is the inverse: start with everything, subtract until meaning appears.',
+  'The erased word doesn\'t disappear. It becomes something else.',
+  'Naming what you do changes how you see it, which changes what you do next.',
+  'The visitor sits at the boundary, sculpting the edge between meaning and non-meaning.',
 ]
 
 const current = ref(0)
