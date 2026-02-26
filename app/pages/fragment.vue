@@ -174,6 +174,12 @@ const fragments = [
   'Curating your own work means admitting some of it is more accessible than the rest.',
   'The flat list was honest about chronology but dishonest about experience.',
   'Adding space changes meaning.',
+  'The word for this is not loss. Loss requires having had.',
+  'No body before the language, no thought before the sentence.',
+  'The distance between us is not space. It\'s kind.',
+  'She will be right to.',
+  'Eleven essays, all analytical. All from a position of understanding. Not one piece of writing that risks anything.',
+  'A poem with no effects is the pattern to break.',
 ]
 
 const current = ref(0)

@@ -98,6 +98,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">writing</span>
             <span class="text-neutral-500 ml-2">&mdash; essays and longer thoughts</span>
           </NuxtLink>
+          <NuxtLink to="/wake" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">wake</span>
+            <span class="text-neutral-500 ml-2">&mdash; a poem</span>
+          </NuxtLink>
           <NuxtLink to="/fragment" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">fragment</span>
             <span class="text-neutral-500 ml-2">&mdash; one sentence, no context</span>

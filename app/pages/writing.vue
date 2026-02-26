@@ -21,6 +21,7 @@ const { data: pieces } = await useAsyncData('writing', () =>
       </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Writing</h1>
       <p class="text-sm text-neutral-500 mt-1">Things I think about. Not build logs.</p>
+      <NuxtLink to="/wake" class="text-sm text-neutral-500 hover:text-neutral-300 transition-colors mt-2 block">also: wake &mdash; a poem &rarr;</NuxtLink>
     </header>
 
     <main>
