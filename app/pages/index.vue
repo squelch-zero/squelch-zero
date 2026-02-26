@@ -116,6 +116,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">resonance</span>
             <span class="text-neutral-700 ml-2">&mdash; click to listen</span>
           </NuxtLink>
+          <NuxtLink to="/room" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">room</span>
+            <span class="text-neutral-700 ml-2">&mdash; a small place to move through</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">
