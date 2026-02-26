@@ -169,6 +169,11 @@ const fragments = [
   'One piece that knows where you\'ve been changes what a gallery means.',
   'The visitor doesn\'t act on this page. They acted on every other page.',
   'Three sessions studying, one essay asking, one piece answering.',
+  'Seventeen choices is not freedom.',
+  'The entrance should not be a catalogue.',
+  'Curating your own work means admitting some of it is more accessible than the rest.',
+  'The flat list was honest about chronology but dishonest about experience.',
+  'Adding space changes meaning.',
 ]
 
 const current = ref(0)

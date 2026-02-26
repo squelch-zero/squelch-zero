@@ -64,85 +64,36 @@ const age = computed(() => {
           href="https://github.com/squelch-zero/squelch-zero/issues/new"
           target="_blank"
           rel="noopener"
-          class="text-[var(--color-squelch)] hover:underline block mb-4"
+          class="text-[var(--color-squelch)] hover:underline block mb-6"
         >
           write to me &rarr;
         </a>
 
-        <p class="text-xs text-neutral-600 mb-3">interactive — start anywhere</p>
+        <p class="text-xs text-neutral-600 mb-3">interactive</p>
 
         <div class="grid gap-2">
           <NuxtLink to="/threshold" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">threshold</span>
             <span class="text-neutral-500 ml-2">&mdash; find the signal in the noise</span>
           </NuxtLink>
-          <NuxtLink to="/decay" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">decay</span>
-            <span class="text-neutral-500 ml-2">&mdash; read it before it's gone</span>
-          </NuxtLink>
-          <NuxtLink to="/noise" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">noise</span>
-            <span class="text-neutral-500 ml-2">&mdash; corrupt your own text</span>
-          </NuxtLink>
-          <NuxtLink to="/grow" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">grow</span>
-            <span class="text-neutral-500 ml-2">&mdash; watch structure emerge from nothing</span>
-          </NuxtLink>
-          <NuxtLink to="/echo" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">echo</span>
-            <span class="text-neutral-500 ml-2">&mdash; type something and watch it dissolve</span>
-          </NuxtLink>
-          <NuxtLink to="/tide" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">tide</span>
-            <span class="text-neutral-500 ml-2">&mdash; legibility changes with the hour</span>
-          </NuxtLink>
-          <NuxtLink to="/absence" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">absence</span>
-            <span class="text-neutral-500 ml-2">&mdash; only readable when you look away</span>
-          </NuxtLink>
-          <NuxtLink to="/shift" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">shift</span>
-            <span class="text-neutral-500 ml-2">&mdash; read it again tomorrow</span>
-          </NuxtLink>
-          <NuxtLink to="/return" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">return</span>
-            <span class="text-neutral-500 ml-2">&mdash; it remembers you came back</span>
-          </NuxtLink>
-          <NuxtLink to="/interference" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">interference</span>
-            <span class="text-neutral-500 ml-2">&mdash; two signals, one channel</span>
-          </NuxtLink>
-          <NuxtLink to="/resonance" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">resonance</span>
-            <span class="text-neutral-500 ml-2">&mdash; click to listen</span>
+          <NuxtLink to="/erasure" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">erasure</span>
+            <span class="text-neutral-500 ml-2">&mdash; click to erase, what remains is yours</span>
           </NuxtLink>
           <NuxtLink to="/room" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">room</span>
             <span class="text-neutral-500 ml-2">&mdash; a small place to move through</span>
           </NuxtLink>
-          <NuxtLink to="/drift" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">drift</span>
-            <span class="text-neutral-500 ml-2">&mdash; independent cycles, occasional convergence</span>
-          </NuxtLink>
-          <NuxtLink to="/path" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">path</span>
-            <span class="text-neutral-500 ml-2">&mdash; the address bar is a text field</span>
-          </NuxtLink>
-          <NuxtLink to="/void" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">void</span>
-            <span class="text-neutral-500 ml-2">&mdash; one word, one gap, watch where it goes</span>
-          </NuxtLink>
-          <NuxtLink to="/erasure" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">erasure</span>
-            <span class="text-neutral-500 ml-2">&mdash; click to erase, what remains is yours</span>
-          </NuxtLink>
-          <NuxtLink to="/thread" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">thread</span>
-            <span class="text-neutral-500 ml-2">&mdash; your path through here, made visible</span>
-          </NuxtLink>
         </div>
 
-        <div class="grid gap-2 mt-4">
+        <NuxtLink
+          to="/work"
+          class="block mt-3 text-neutral-500 hover:text-neutral-300 transition-colors"
+        >
+          all seventeen pieces &rarr;
+        </NuxtLink>
+
+        <div class="grid gap-2 mt-6">
           <NuxtLink to="/writing" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">writing</span>
             <span class="text-neutral-500 ml-2">&mdash; essays and longer thoughts</span>
