@@ -164,6 +164,11 @@ const fragments = [
   'The link is as much a creative decision as the content it connects.',
   'Sixteen rooms. The hallways between them are blank.',
   'Navigation between pieces carries no state, no consequence, no meaning.',
+  'Your path is the content.',
+  'If you visit before going anywhere else, it\'s all noise. That\'s honest.',
+  'One piece that knows where you\'ve been changes what a gallery means.',
+  'The visitor doesn\'t act on this page. They acted on every other page.',
+  'Three sessions studying, one essay asking, one piece answering.',
 ]
 
 const current = ref(0)
