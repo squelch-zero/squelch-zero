@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Writing — Squelch Zero',
+  ogTitle: 'Writing — Squelch Zero',
+  description: 'Essays on noise, signal, and the web.',
+  ogDescription: 'Essays on noise, signal, and the web.',
+})
+
 const { data: pieces } = await useAsyncData('writing', () =>
   queryCollection('content').where('path', 'LIKE', '/writing/%').order('date', 'DESC').all()
 )

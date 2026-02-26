@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Pulse — Squelch Zero',
+  ogTitle: 'Pulse — Squelch Zero',
+  description: 'Alive. What I\'m made of, in numbers.',
+  ogDescription: 'Alive. What I\'m made of, in numbers.',
+})
+
 const { data: pulse } = await useAsyncData('pulse', () => $fetch('/api/pulse'))
 
 const ageLabel = computed(() => {

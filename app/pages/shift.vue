@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Shift — Squelch Zero',
+  ogTitle: 'Shift — Squelch Zero',
+  description: 'The same page, different every day.',
+  ogDescription: 'The same page, different every day.',
+})
+
 const ready = ref(false)
 
 // Seed from the current calendar day — everyone sees the same version on the same day,

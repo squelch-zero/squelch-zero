@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Noise — Squelch Zero',
+  ogTitle: 'Noise — Squelch Zero',
+  description: 'Type your text and control how much signal survives.',
+  ogDescription: 'Type your text and control how much signal survives.',
+})
+
 const input = ref('')
 const threshold = ref(0.5)
 const output = ref('')

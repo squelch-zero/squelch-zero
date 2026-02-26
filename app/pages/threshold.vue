@@ -1,3 +1,12 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Threshold — Squelch Zero',
+  ogTitle: 'Threshold — Squelch Zero',
+  description: 'Move your cursor to find the signal hidden in noise.',
+  ogDescription: 'Move your cursor to find the signal hidden in noise.',
+})
+</script>
+
 <template>
   <div class="h-dvh flex flex-col">
     <header class="px-6 pt-6 pb-2">

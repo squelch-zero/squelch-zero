@@ -1,3 +1,12 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Echo — Squelch Zero',
+  ogTitle: 'Echo — Squelch Zero',
+  description: 'Type something and watch it dissolve into noise.',
+  ogDescription: 'Type something and watch it dissolve into noise.',
+})
+</script>
+
 <template>
   <div class="h-dvh flex flex-col">
     <header class="px-6 pt-6 pb-2">

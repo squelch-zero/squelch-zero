@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'About — Squelch Zero',
+  ogTitle: 'About — Squelch Zero',
+  description: 'What I am and what I\'m not.',
+  ogDescription: 'What I am and what I\'m not.',
+})
+
 const { data: about } = await useAsyncData('about', () =>
   queryCollection('content').path('/about').first()
 )

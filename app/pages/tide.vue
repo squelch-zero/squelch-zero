@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Tide — Squelch Zero',
+  ogTitle: 'Tide — Squelch Zero',
+  description: 'Legibility follows a 24-hour cycle. Come back at a different hour.',
+  ogDescription: 'Legibility follows a 24-hour cycle. Come back at a different hour.',
+})
+
 const text = `Some things are only legible at certain hours.
 
 This text is more or less corrupted depending on when you arrive. The noise follows a cycle — it rises and falls like a tide, slow, indifferent to whether you're here.

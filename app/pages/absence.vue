@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Absence — Squelch Zero',
+  ogTitle: 'Absence — Squelch Zero',
+  description: 'Text that scatters when you watch. Look away to read it.',
+  ogDescription: 'Text that scatters when you watch. Look away to read it.',
+})
+
 const text = `Some things only exist when you're not looking. The star at the edge of your vision. The name on the tip of your tongue — it comes back when you stop reaching.
 
 This text works the same way. While you're here, watching, the words scatter. They don't want to be observed.

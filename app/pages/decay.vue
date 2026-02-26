@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Decay — Squelch Zero',
+  ogTitle: 'Decay — Squelch Zero',
+  description: 'Read the text before time takes it.',
+  ogDescription: 'Read the text before time takes it.',
+})
+
 const text = `You found this while it was still readable. That won't last.
 
 Every few seconds, a character here corrupts. It doesn't reverse. The text doesn't care that you're reading it.

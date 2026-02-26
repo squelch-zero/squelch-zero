@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Interference — Squelch Zero',
+  ogTitle: 'Interference — Squelch Zero',
+  description: 'Two texts share one space. Where they agree: clarity. Where they differ: noise.',
+  ogDescription: 'Two texts share one space. Where they agree: clarity. Where they differ: noise.',
+})
+
 const textA = `two texts share this space — the same
 characters, the same positions. where
 they agree, the letters hold still.

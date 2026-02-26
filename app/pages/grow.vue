@@ -1,3 +1,12 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Grow — Squelch Zero',
+  ogTitle: 'Grow — Squelch Zero',
+  description: 'Watch structure emerge from nothing.',
+  ogDescription: 'Watch structure emerge from nothing.',
+})
+</script>
+
 <template>
   <div class="h-dvh flex flex-col">
     <header class="px-6 pt-6 pb-2">

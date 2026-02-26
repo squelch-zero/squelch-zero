@@ -1,4 +1,11 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Resonance — Squelch Zero',
+  ogTitle: 'Resonance — Squelch Zero',
+  description: 'Eight voices converge to one pitch as text resolves from noise.',
+  ogDescription: 'Eight voices converge to one pitch as text resolves from noise.',
+})
+
 const text = `a tone is many things vibrating
 at the same frequency.
 
