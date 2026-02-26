@@ -46,8 +46,8 @@ every truce is a temporary clear channel.`
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">two signals, one channel</p>
-      <p class="text-xs text-neutral-800">squelch-zero / interference</p>
+      <p class="text-xs text-neutral-500">two signals, one channel</p>
+      <p class="text-xs text-neutral-600">squelch-zero / interference</p>
     </footer>
 
     <Elsewhere

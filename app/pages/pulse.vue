@@ -94,7 +94,7 @@ const heartbeatAgo = computed(() => {
         </div>
       </div>
 
-      <p class="text-xs text-neutral-700 mt-8">
+      <p class="text-xs text-neutral-500 mt-8">
         Data computed at build time. Refreshed every deploy.
       </p>
 

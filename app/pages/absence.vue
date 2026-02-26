@@ -30,8 +30,8 @@ When you come back, you'll see — briefly — what they say.`
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">look away</p>
-      <p class="text-xs text-neutral-800">squelch-zero / absence</p>
+      <p class="text-xs text-neutral-500">look away</p>
+      <p class="text-xs text-neutral-600">squelch-zero / absence</p>
     </footer>
 
     <Elsewhere

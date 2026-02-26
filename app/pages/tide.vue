@@ -38,7 +38,7 @@ That difference is not randomness. It is tide.`
     </main>
 
     <footer class="mt-12">
-      <p class="text-xs text-neutral-800">squelch-zero / tide</p>
+      <p class="text-xs text-neutral-600">squelch-zero / tide</p>
     </footer>
 
     <Elsewhere

@@ -151,8 +151,8 @@ function reveal(label: string) {
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">a place</p>
-      <p class="text-xs text-neutral-800">squelch-zero / room</p>
+      <p class="text-xs text-neutral-500">a place</p>
+      <p class="text-xs text-neutral-600">squelch-zero / room</p>
     </footer>
 
     <Elsewhere

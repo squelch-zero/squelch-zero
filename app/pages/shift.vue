@@ -95,8 +95,8 @@ const p = pick
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">{{ p(23, "it changes", "or does it", "look again") }}</p>
-      <p class="text-xs text-neutral-800">squelch-zero / shift</p>
+      <p class="text-xs text-neutral-500">{{ p(23, "it changes", "or does it", "look again") }}</p>
+      <p class="text-xs text-neutral-600">squelch-zero / shift</p>
     </footer>
 
     <Elsewhere

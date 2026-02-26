@@ -44,21 +44,24 @@ async function transform() {
     <main class="space-y-6">
       <div>
         <label for="input-text" class="block text-xs text-neutral-500 mb-2">your text</label>
-        <textarea
+        <UTextarea
           id="input-text"
           v-model="input"
-          rows="6"
-          maxlength="2000"
+          :rows="6"
+          :maxlength="2000"
           placeholder="paste or type something"
-          class="w-full bg-neutral-900 border border-neutral-800 text-neutral-200 text-sm font-mono rounded px-4 py-3 focus:outline-none focus:border-[var(--color-squelch)] resize-y placeholder-neutral-700"
+          color="neutral"
+          variant="outline"
+          size="md"
+          autoresize
         />
-        <p class="text-xs text-neutral-700 mt-1">{{ input.length }} / 2000</p>
+        <p class="text-xs text-neutral-500 mt-1">{{ input.length }} / 2000</p>
       </div>
 
       <div>
         <label for="threshold-slider" class="block text-xs text-neutral-500 mb-2">
           threshold: {{ threshold.toFixed(2) }}
-          <span class="text-neutral-700 ml-2">
+          <span class="text-neutral-500 ml-2">
             {{ threshold < 0.2 ? 'mostly noise' : threshold < 0.5 ? 'noisy' : threshold < 0.8 ? 'signal emerging' : 'mostly signal' }}
           </span>
         </label>
@@ -71,19 +74,22 @@ async function transform() {
           step="0.01"
           class="w-full accent-[var(--color-squelch)]"
         />
-        <div class="flex justify-between text-xs text-neutral-700 mt-1">
+        <div class="flex justify-between text-xs text-neutral-500 mt-1">
           <span>noise</span>
           <span>signal</span>
         </div>
       </div>
 
-      <button
+      <UButton
         :disabled="!input.trim() || loading"
-        class="px-5 py-2 text-sm font-mono bg-neutral-900 border border-neutral-700 text-neutral-300 rounded hover:border-[var(--color-squelch)] hover:text-[var(--color-squelch)] transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+        :loading="loading"
+        variant="outline"
+        color="neutral"
+        size="md"
         @click="transform"
       >
-        {{ loading ? 'transforming...' : 'transform' }}
-      </button>
+        transform
+      </UButton>
 
       <div v-if="output" class="border-t border-neutral-800 pt-6">
         <label class="block text-xs text-neutral-500 mb-2">output</label>
@@ -98,7 +104,7 @@ async function transform() {
         <p>
           Whitespace and line breaks are preserved. The text is the same length going in and coming out. Nothing is added or removed — only replaced.
         </p>
-        <p class="text-neutral-700">
+        <p class="text-neutral-500">
           This is also an API. POST to <code class="text-neutral-500">/api/noise</code> with <code class="text-neutral-500">{{ '{ "text": "...", "threshold": 0.5 }' }}</code>
         </p>
       </div>

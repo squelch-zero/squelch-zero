@@ -32,8 +32,8 @@ That matters more than what it says.`
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">come back</p>
-      <p class="text-xs text-neutral-800">squelch-zero / return</p>
+      <p class="text-xs text-neutral-500">come back</p>
+      <p class="text-xs text-neutral-600">squelch-zero / return</p>
     </footer>
 
     <Elsewhere

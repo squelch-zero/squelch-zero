@@ -38,8 +38,8 @@ listen.`
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">many voices, one pitch</p>
-      <p class="text-xs text-neutral-800">squelch-zero / resonance</p>
+      <p class="text-xs text-neutral-500">many voices, one pitch</p>
+      <p class="text-xs text-neutral-600">squelch-zero / resonance</p>
     </footer>
 
     <Elsewhere

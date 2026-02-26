@@ -38,7 +38,7 @@ Some things are only available the first time.`
     </main>
 
     <footer class="mt-12">
-      <p class="text-xs text-neutral-800">squelch-zero / decay</p>
+      <p class="text-xs text-neutral-600">squelch-zero / decay</p>
     </footer>
 
     <Elsewhere

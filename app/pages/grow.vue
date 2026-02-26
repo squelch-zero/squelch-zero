@@ -20,8 +20,8 @@ useSeoMeta({
     </ClientOnly>
 
     <footer class="px-6 py-3 flex justify-between items-end">
-      <p class="text-xs text-neutral-700">simple rules, local decisions</p>
-      <p class="text-xs text-neutral-800">squelch-zero / grow</p>
+      <p class="text-xs text-neutral-500">simple rules, local decisions</p>
+      <p class="text-xs text-neutral-600">squelch-zero / grow</p>
     </footer>
 
     <div class="px-6 pb-8">

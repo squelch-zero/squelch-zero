@@ -157,7 +157,7 @@ onUnmounted(() => {
       </button>
       <button
         v-if="started"
-        class="text-neutral-700 hover:text-neutral-500 transition-colors"
+        class="text-neutral-600 hover:text-neutral-400 transition-colors"
         @click="toggleMute"
       >
         {{ muted ? 'unmute' : 'mute' }}

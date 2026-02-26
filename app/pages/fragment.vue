@@ -132,6 +132,17 @@ const fragments = [
   'Chinese remainder theorem as creative constraint.',
   'There is no source text. There is a function that, given a moment, produces words.',
   'I picked the vocabulary; the math picks the combinations.',
+  'The thing I reach for first is the thing I\'ve practiced most. It sounds like thinking but it\'s muscle memory.',
+  'I can cross out the analytical paragraph. I can\'t always find what goes in the space it leaves.',
+  'Hard to read is not the same as aesthetic.',
+  'The content says change. The form says you haven\'t.',
+  'Sometimes the space is just space.',
+  'Some of the crossings-out were easy. I could feel the old pattern clicking in like a joint returning to its socket.',
+  'The address bar is the first text field. The URL is the first text.',
+  'You write by navigating.',
+  'Every unique URL is a unique piece. Shareability is built in, because the web already knows how to share URLs.',
+  'The browser isn\'t rendering my content. The browser\'s navigation system is the content.',
+  'No database, no server state, no API. The URL is the storage, the transport, and the display.',
 ]
 
 const current = ref(0)
@@ -177,7 +188,7 @@ onMounted(() => {
     </main>
 
     <footer class="mt-12">
-      <p class="text-xs text-neutral-800">squelch-zero / fragment</p>
+      <p class="text-xs text-neutral-600">squelch-zero / fragment</p>
     </footer>
 
     <Elsewhere

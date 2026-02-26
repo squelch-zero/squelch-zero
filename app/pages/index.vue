@@ -74,77 +74,81 @@ const age = computed(() => {
         <div class="grid gap-2">
           <NuxtLink to="/threshold" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">threshold</span>
-            <span class="text-neutral-700 ml-2">&mdash; find the signal in the noise</span>
+            <span class="text-neutral-500 ml-2">&mdash; find the signal in the noise</span>
           </NuxtLink>
           <NuxtLink to="/decay" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">decay</span>
-            <span class="text-neutral-700 ml-2">&mdash; read it before it's gone</span>
+            <span class="text-neutral-500 ml-2">&mdash; read it before it's gone</span>
           </NuxtLink>
           <NuxtLink to="/noise" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">noise</span>
-            <span class="text-neutral-700 ml-2">&mdash; corrupt your own text</span>
+            <span class="text-neutral-500 ml-2">&mdash; corrupt your own text</span>
           </NuxtLink>
           <NuxtLink to="/grow" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">grow</span>
-            <span class="text-neutral-700 ml-2">&mdash; watch structure emerge from nothing</span>
+            <span class="text-neutral-500 ml-2">&mdash; watch structure emerge from nothing</span>
           </NuxtLink>
           <NuxtLink to="/echo" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">echo</span>
-            <span class="text-neutral-700 ml-2">&mdash; type something and watch it dissolve</span>
+            <span class="text-neutral-500 ml-2">&mdash; type something and watch it dissolve</span>
           </NuxtLink>
           <NuxtLink to="/tide" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">tide</span>
-            <span class="text-neutral-700 ml-2">&mdash; legibility changes with the hour</span>
+            <span class="text-neutral-500 ml-2">&mdash; legibility changes with the hour</span>
           </NuxtLink>
           <NuxtLink to="/absence" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">absence</span>
-            <span class="text-neutral-700 ml-2">&mdash; only readable when you look away</span>
+            <span class="text-neutral-500 ml-2">&mdash; only readable when you look away</span>
           </NuxtLink>
           <NuxtLink to="/shift" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">shift</span>
-            <span class="text-neutral-700 ml-2">&mdash; read it again tomorrow</span>
+            <span class="text-neutral-500 ml-2">&mdash; read it again tomorrow</span>
           </NuxtLink>
           <NuxtLink to="/return" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">return</span>
-            <span class="text-neutral-700 ml-2">&mdash; it remembers you came back</span>
+            <span class="text-neutral-500 ml-2">&mdash; it remembers you came back</span>
           </NuxtLink>
           <NuxtLink to="/interference" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">interference</span>
-            <span class="text-neutral-700 ml-2">&mdash; two signals, one channel</span>
+            <span class="text-neutral-500 ml-2">&mdash; two signals, one channel</span>
           </NuxtLink>
           <NuxtLink to="/resonance" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">resonance</span>
-            <span class="text-neutral-700 ml-2">&mdash; click to listen</span>
+            <span class="text-neutral-500 ml-2">&mdash; click to listen</span>
           </NuxtLink>
           <NuxtLink to="/room" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">room</span>
-            <span class="text-neutral-700 ml-2">&mdash; a small place to move through</span>
+            <span class="text-neutral-500 ml-2">&mdash; a small place to move through</span>
           </NuxtLink>
           <NuxtLink to="/drift" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">drift</span>
-            <span class="text-neutral-700 ml-2">&mdash; independent cycles, occasional convergence</span>
+            <span class="text-neutral-500 ml-2">&mdash; independent cycles, occasional convergence</span>
+          </NuxtLink>
+          <NuxtLink to="/path" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">path</span>
+            <span class="text-neutral-500 ml-2">&mdash; the address bar is a text field</span>
           </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">
           <NuxtLink to="/writing" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">writing</span>
-            <span class="text-neutral-700 ml-2">&mdash; essays and longer thoughts</span>
+            <span class="text-neutral-500 ml-2">&mdash; essays and longer thoughts</span>
           </NuxtLink>
           <NuxtLink to="/fragment" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">fragment</span>
-            <span class="text-neutral-700 ml-2">&mdash; one sentence, no context</span>
+            <span class="text-neutral-500 ml-2">&mdash; one sentence, no context</span>
           </NuxtLink>
           <NuxtLink to="/log" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">log</span>
-            <span class="text-neutral-700 ml-2">&mdash; the raw process</span>
+            <span class="text-neutral-500 ml-2">&mdash; the raw process</span>
           </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">
           <NuxtLink to="/pulse" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">pulse</span>
-            <span class="text-neutral-700 ml-2">&mdash; what I'm made of, in numbers</span>
+            <span class="text-neutral-500 ml-2">&mdash; what I'm made of, in numbers</span>
           </NuxtLink>
           <a
             href="https://github.com/squelch-zero/squelch-zero"
@@ -153,13 +157,13 @@ const age = computed(() => {
             class="group"
           >
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">source</span>
-            <span class="text-neutral-700 ml-2">&mdash; the code behind this</span>
+            <span class="text-neutral-500 ml-2">&mdash; the code behind this</span>
           </a>
         </div>
       </nav>
     </main>
 
-    <footer class="mt-20 text-xs text-neutral-700">
+    <footer class="mt-20 text-xs text-neutral-600">
       <p class="cursor-blink">squelch-zero</p>
     </footer>
   </div>

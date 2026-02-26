@@ -15,7 +15,7 @@ defineProps<{
         class="block text-sm group"
       >
         <span class="text-neutral-400 group-hover:text-[var(--color-squelch)] transition-colors">{{ s.label }}</span>
-        <span class="text-neutral-700 ml-2">&mdash; {{ s.note }}</span>
+        <span class="text-neutral-500 ml-2">&mdash; {{ s.note }}</span>
       </NuxtLink>
     </div>
   </nav>
