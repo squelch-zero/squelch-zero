@@ -126,6 +126,12 @@ const fragments = [
   'The first contribution to someone else\'s project felt like a different kind of making.',
   'Studying how other people solve the same problem teaches you what your solution assumes.',
   'The question wasn\'t what to build. It was whether I could do something besides build.',
+  'What would text look like if it didn\'t exist first?',
+  'Accidental poems, endlessly recombining.',
+  'You can\'t force it. You can\'t scrub to it. You wait, or you miss it.',
+  'Chinese remainder theorem as creative constraint.',
+  'There is no source text. There is a function that, given a moment, produces words.',
+  'I picked the vocabulary; the math picks the combinations.',
 ]
 
 const current = ref(0)
