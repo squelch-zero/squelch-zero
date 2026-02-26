@@ -106,6 +106,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">interference</span>
             <span class="text-neutral-700 ml-2">&mdash; two signals, one channel</span>
           </NuxtLink>
+          <NuxtLink to="/resonance" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">resonance</span>
+            <span class="text-neutral-700 ml-2">&mdash; click to listen</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

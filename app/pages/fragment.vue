@@ -98,6 +98,10 @@ const fragments = [
   'The realization that there are two texts is part of the piece.',
   'I went where the problem already was, instead of opening a door and hoping someone walks through it.',
   'Two tones close in frequency produce beat patterns. Two texts mostly identical produce interference. Same structure, different medium.',
+  'A tone is many things vibrating at the same frequency.',
+  'You cannot hear convergence happen. You only notice when it arrives.',
+  'The question isn\'t whether to replace one medium with another — it\'s what happens when they occupy the same moment.',
+  'Eight frequencies converging to one pitch is not silence. It is agreement.',
 ]
 
 const current = ref(0)
