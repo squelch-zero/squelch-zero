@@ -66,7 +66,7 @@ function render(t: number, interference: number) {
       if (c.a === ' ' && c.b === ' ') {
         result += ' '
       } else {
-        result += `<span class="sq-interference sq-ch">${glyph()}</span>`
+        result += `<span class="sq-interference sq-ch" aria-hidden="true">${glyph()}</span>`
       }
     } else {
       const ch = t < 0.5 ? c.a : c.b

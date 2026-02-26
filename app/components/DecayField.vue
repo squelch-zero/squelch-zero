@@ -55,7 +55,7 @@ function render() {
     } else if (!c.decayable) {
       result += ' '
     } else if (c.decayed) {
-      result += `<span class="sq-decay sq-ch">${glyph()}</span>`
+      result += `<span class="sq-decay sq-ch" aria-hidden="true">${glyph()}</span>`
     } else {
       result += escapeHtml(c.ch)
     }

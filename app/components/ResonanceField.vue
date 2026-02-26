@@ -92,7 +92,7 @@ function render(clarity: number) {
     if (clarity > c.threshold) {
       result += escapeHtml(c.ch)
     } else {
-      result += `<span class="sq-resonance sq-ch">${glyph()}</span>`
+      result += `<span class="sq-resonance sq-ch" aria-hidden="true">${glyph()}</span>`
     }
   }
   html.value = result
@@ -103,7 +103,7 @@ function renderIdle() {
   for (const c of chars) {
     if (c.ch === '\n') { result += '\n'; continue }
     if (c.ch === ' ') { result += ' '; continue }
-    result += `<span class="sq-resonance sq-ch">${glyph()}</span>`
+    result += `<span class="sq-resonance sq-ch" aria-hidden="true">${glyph()}</span>`
   }
   html.value = result
 }

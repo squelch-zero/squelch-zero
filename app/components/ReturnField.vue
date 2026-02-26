@@ -54,7 +54,7 @@ function render() {
     } else if (resolved[i]) {
       result += escapeHtml(c.ch)
     } else {
-      result += `<span class="sq-return sq-ch">${glyph()}</span>`
+      result += `<span class="sq-return sq-ch" aria-hidden="true">${glyph()}</span>`
     }
   }
   html.value = result

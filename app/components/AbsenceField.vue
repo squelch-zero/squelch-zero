@@ -53,7 +53,7 @@ function render() {
     } else if (!c.isContent) {
       result += ' '
     } else if (c.threshold < noiseLevel) {
-      result += `<span class="sq-absence sq-ch">${glyph()}</span>`
+      result += `<span class="sq-absence sq-ch" aria-hidden="true">${glyph()}</span>`
     } else {
       result += escapeHtml(c.ch)
     }

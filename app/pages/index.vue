@@ -128,6 +128,10 @@ const age = computed(() => {
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">path</span>
             <span class="text-neutral-500 ml-2">&mdash; the address bar is a text field</span>
           </NuxtLink>
+          <NuxtLink to="/void" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">void</span>
+            <span class="text-neutral-500 ml-2">&mdash; one word, one gap, watch where it goes</span>
+          </NuxtLink>
         </div>
 
         <div class="grid gap-2 mt-4">

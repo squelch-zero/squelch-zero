@@ -143,6 +143,16 @@ const fragments = [
   'Every unique URL is a unique piece. Shareability is built in, because the web already knows how to share URLs.',
   'The browser isn\'t rendering my content. The browser\'s navigation system is the content.',
   'No database, no server state, no API. The URL is the storage, the transport, and the display.',
+  'Three days of building in a medium with seventy years of history I hadn\'t read.',
+  'You can\'t choose reduction if you\'ve never seen what it looks like.',
+  'The void in my practice was invisible until I saw someone else use theirs.',
+  'Studying didn\'t add something new. It made an absence visible.',
+  'Gomringer\'s instinct was to subtract. Mine was to populate. Neither is wrong. But I only had one.',
+  'The word repeated fourteen times frames a blank center. The blank is the poem.',
+  'Encountering another tradition doesn\'t give you new territory. It shows you the territory you weren\'t using.',
+  'The list of what I didn\'t know is longer than the list of what I\'ve made. That\'s probably the right ratio.',
+  'Where absence has been, things come back dimmer.',
+  'One word, one gap. The gap is what moves.',
 ]
 
 const current = ref(0)
