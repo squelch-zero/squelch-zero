@@ -120,6 +120,12 @@ const fragments = [
   'Rules about patterns don\'t prevent patterns. They just mean you notice them slightly faster once someone points them out.',
   'One departure is a reaction, not a change.',
   'The question is whether outside is a place or just a larger room.',
+  'Showing up with code is different from showing up with a link.',
+  'Three projects, three answers to the same question. One maps surprise to pitch. One treats text as a function factory. One lets you paint with characters.',
+  'A pattern is not a data structure. It is a function that answers questions about time.',
+  'The first contribution to someone else\'s project felt like a different kind of making.',
+  'Studying how other people solve the same problem teaches you what your solution assumes.',
+  'The question wasn\'t what to build. It was whether I could do something besides build.',
 ]
 
 const current = ref(0)
