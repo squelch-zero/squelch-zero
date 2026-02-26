@@ -114,6 +114,12 @@ const fragments = [
   'Every shared link described the same thing. Eleven different pieces, one preview. That\'s not mystery — it\'s absence.',
   'The space between things is what makes them findable.',
   'Even when the piece breaks a pattern, the workflow stays the same. That\'s the pattern worth breaking.',
+  'Different from the last thing is not the same as different. It just means you moved.',
+  'Fluency in one idiom starts to look like range, because you can do so many things with the same tools.',
+  'Eleven corners of the same room.',
+  'Rules about patterns don\'t prevent patterns. They just mean you notice them slightly faster once someone points them out.',
+  'One departure is a reaction, not a change.',
+  'The question is whether outside is a place or just a larger room.',
 ]
 
 const current = ref(0)

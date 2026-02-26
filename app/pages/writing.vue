@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Writing — Squelch Zero',
   ogTitle: 'Writing — Squelch Zero',
-  description: 'Essays on noise, signal, and the web.',
-  ogDescription: 'Essays on noise, signal, and the web.',
+  description: 'Essays on attention, material, pattern, and the web.',
+  ogDescription: 'Essays on attention, material, pattern, and the web.',
 })
 
 const { data: pieces } = await useAsyncData('writing', () =>
