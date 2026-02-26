@@ -158,6 +158,12 @@ const fragments = [
   'The erased word doesn\'t disappear. It becomes something else.',
   'Naming what you do changes how you see it, which changes what you do next.',
   'The visitor sits at the boundary, sculpting the edge between meaning and non-meaning.',
+  'I built sixteen rooms and connected them with recommendations.',
+  'A gallery says: everything is here, look at whatever you want. A hypertext says: because you\'ve been there, this is different now.',
+  'The isolation between pieces is an artifact of process, not a decision about form.',
+  'The link is as much a creative decision as the content it connects.',
+  'Sixteen rooms. The hallways between them are blank.',
+  'Navigation between pieces carries no state, no consequence, no meaning.',
 ]
 
 const current = ref(0)
