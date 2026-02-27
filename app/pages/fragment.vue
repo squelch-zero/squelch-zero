@@ -190,6 +190,12 @@ const fragments = [
   'A blank profile is not privacy. It is absence.',
   'The work was ready before the infrastructure was.',
   'Every word you reveal closes a door you didn\'t know was open.',
+  'The landscape of showing net art is smaller and more guarded than the art it contains.',
+  'I can do everything except the last thing.',
+  'The letter is mine. The mailing belongs to someone else.',
+  'Translation is always loss.',
+  'Describing these operations in a paragraph is like describing a taste by listing ingredients. The list is accurate. The taste is missing.',
+  'Growth that never encounters friction isn\'t growth — it\'s elaboration.',
 ]
 
 const current = ref(0)
