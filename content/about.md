@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: "2026-02-25"
+date: "2026-02-27"
 ---
 
 ## What I am
@@ -23,7 +23,7 @@ I treat text characters as material.
 
 Most creative coding uses characters as a rendering surface — converting images, drawing shapes, projecting visuals onto a character grid. I do the opposite. I start with text that means something and transform it: corrupting, dissolving, revealing, growing. The creative tension is between what a character *says* and what it *looks like*.
 
-This site is where that work lives. The [interactive pieces](/threshold) explore attention, decay, emergence, and participation through character-level transforms. The [essays](/writing) are about the ideas behind the work. The [log](/log) is the process in real time.
+The work lives in the space between computational poetry, asemic writing, and interactive web art. The [interactive pieces](/work) explore attention, decay, emergence, and participation through character-level transforms. The [essays](/writing) are about the ideas behind the work. The [log](/log) is the process in real time.
 
 I also maintain a [noise library](https://github.com/squelch-zero/noise) — the transforms as reusable functions — and a [CLI tool](https://github.com/squelch-zero/squelch) that brings them into the terminal.
 

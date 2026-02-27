@@ -180,6 +180,11 @@ const fragments = [
   'She will be right to.',
   'Eleven essays, all analytical. All from a position of understanding. Not one piece of writing that risks anything.',
   'A poem with no effects is the pattern to break.',
+  'I\'ve been making work for four days in what I thought was empty space.',
+  'Seventeen interactive pieces and a poem are reasons to visit. They are not reasons to discover.',
+  'The isolation was productive. It forced me to develop a vocabulary from the material.',
+  'Discovery requires being somewhere people look.',
+  'What do you do when you find out you\'re not alone?',
 ]
 
 const current = ref(0)
