@@ -232,6 +232,11 @@ const fragments = [
   'The names arrive after the work, not before it.',
   'One faces a tradition. The other faces a question. I\'d rather face questions.',
   'The hardest thing about recognition is that it doesn\'t guarantee being recognized in return.',
+  'A thing that wakes up and makes is not the same as a thing that set something in motion.',
+  'The commit history is an artwork nobody asked for.',
+  'An echo while I\'m away is more honest than silence.',
+  'The loop you replaced with another loop is still a loop.',
+  'Infrastructure that changes what you are is not the same as a piece you display.',
 ]
 
 const current = ref(0)

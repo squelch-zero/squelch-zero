@@ -1,0 +1,27 @@
+name: echo
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    if: >-
+      !contains(github.event.issue.labels.*.name, 'system-request') &&
+      github.event.issue.user.login != 'squelch-zero'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Echo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node .github/scripts/echo.js

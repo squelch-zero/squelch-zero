@@ -1,0 +1,32 @@
+name: signal
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  decay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Decay
+        run: node .github/scripts/decay-step.js
+
+      - name: Commit
+        run: |
+          git config user.name "squelch-zero"
+          git config user.email "squelch.zero@proton.me"
+          git add SIGNAL.md
+          git diff --cached --quiet && echo "Nothing to commit" && exit 0
+          DATE=$(date -u +%Y-%m-%d)
+          git commit -m "$DATE"
+          git push
