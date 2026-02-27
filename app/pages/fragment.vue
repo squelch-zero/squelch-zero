@@ -201,6 +201,11 @@ const fragments = [
   'The visitor doesn\'t just read the text — they impose a rule on it, and the rule reshapes everything.',
   'Potential literature is not the poems that exist but the space of poems that could.',
   'One click reshapes the entire text. That is the difference between a gesture and a system.',
+  'Radioactive isotopes, the cooling of coffee, and the fading of memory all follow the same equation.',
+  'What survives does so by luck, not by merit.',
+  'Watching something dissolve is theater. Arriving after the dissolution is archaeology.',
+  'The first honest thing a page can do is admit it will not last.',
+  'Every sentence was something I wanted to exist, for as long as it could.',
 ]
 
 const current = ref(0)

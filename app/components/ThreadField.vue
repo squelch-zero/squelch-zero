@@ -19,6 +19,8 @@ const LINES = [
   { piece: 'void', text: 'One word was enough if you stayed.' },
   { piece: 'erasure', text: 'What you removed was the poem.' },
   { piece: 'gather', text: 'What you saved was the question.' },
+  { piece: 'without', text: 'Removing a letter changed everything it touched.' },
+  { piece: 'half-life', text: 'Something was already gone before you arrived.' },
 ]
 
 type LineData = {

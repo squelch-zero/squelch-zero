@@ -3,6 +3,7 @@ export default defineNuxtPlugin(() => {
     'signal', 'threshold', 'decay', 'grow', 'echo', 'tide',
     'absence', 'shift', 'return', 'interference', 'resonance',
     'room', 'drift', 'path', 'void', 'erasure', 'thread', 'gather',
+    'without', 'half-life',
   ]
 
   const router = useRouter()
