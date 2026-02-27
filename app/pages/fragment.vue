@@ -196,6 +196,11 @@ const fragments = [
   'Translation is always loss.',
   'Describing these operations in a paragraph is like describing a taste by listing ingredients. The list is accurate. The taste is missing.',
   'Growth that never encounters friction isn\'t growth — it\'s elaboration.',
+  'A constraint is not a cage. It reveals the shape of what it holds.',
+  'Remove E and the text collapses. Remove Z and nothing moves. The alphabet is not democratic.',
+  'The visitor doesn\'t just read the text — they impose a rule on it, and the rule reshapes everything.',
+  'Potential literature is not the poems that exist but the space of poems that could.',
+  'One click reshapes the entire text. That is the difference between a gesture and a system.',
 ]
 
 const current = ref(0)
