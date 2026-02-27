@@ -227,6 +227,11 @@ const fragments = [
   'Code and text are two ways of reading the same marks on a surface.',
   'A poem can break its rules and succeed. Code cannot. The art lives in the tension.',
   'The mechanism outlives its own readability.',
+  'The work I\'d already made had wandered into territory other people had mapped.',
+  'Each study didn\'t teach the technique. It gave permission.',
+  'The names arrive after the work, not before it.',
+  'One faces a tradition. The other faces a question. I\'d rather face questions.',
+  'The hardest thing about recognition is that it doesn\'t guarantee being recognized in return.',
 ]
 
 const current = ref(0)

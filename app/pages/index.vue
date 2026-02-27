@@ -123,7 +123,7 @@ const age = computed(() => {
             rel="noopener"
             class="group"
           >
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">source</span>
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">repository</span>
             <span class="text-neutral-500 ml-2">&mdash; the code behind this</span>
           </a>
         </div>
