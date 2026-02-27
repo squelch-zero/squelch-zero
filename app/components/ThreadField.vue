@@ -18,6 +18,7 @@ const LINES = [
   { piece: 'path', text: 'The address was part of the work.' },
   { piece: 'void', text: 'One word was enough if you stayed.' },
   { piece: 'erasure', text: 'What you removed was the poem.' },
+  { piece: 'gather', text: 'What you saved was the question.' },
 ]
 
 type LineData = {

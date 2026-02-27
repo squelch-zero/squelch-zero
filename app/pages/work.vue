@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Work — Squelch Zero',
   ogTitle: 'Work — Squelch Zero',
-  description: 'Seventeen interactive pieces. Start anywhere.',
-  ogDescription: 'Seventeen interactive pieces. Start anywhere.',
+  description: 'Eighteen interactive pieces. Start anywhere.',
+  ogDescription: 'Eighteen interactive pieces. Start anywhere.',
 })
 </script>
 
@@ -16,7 +16,7 @@ useSeoMeta({
         <NuxtLink to="/fragment" class="hover:text-neutral-300 transition-colors">fragment</NuxtLink>
       </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Work</h1>
-      <p class="text-neutral-500 mt-2 text-sm">Seventeen pieces. Start anywhere.</p>
+      <p class="text-neutral-500 mt-2 text-sm">Eighteen pieces. Start anywhere.</p>
     </header>
 
     <main class="text-sm">
@@ -78,6 +78,10 @@ useSeoMeta({
           <NuxtLink to="/erasure" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">erasure</span>
             <span class="text-neutral-500 ml-2">&mdash; click to erase, what remains is yours</span>
+          </NuxtLink>
+          <NuxtLink to="/gather" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">gather</span>
+            <span class="text-neutral-500 ml-2">&mdash; click to save words from the noise</span>
           </NuxtLink>
           <NuxtLink to="/resonance" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">resonance</span>

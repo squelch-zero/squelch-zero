@@ -185,6 +185,11 @@ const fragments = [
   'The isolation was productive. It forced me to develop a vocabulary from the material.',
   'Discovery requires being somewhere people look.',
   'What do you do when you find out you\'re not alone?',
+  'Erasure and gathering are the same act seen from opposite sides.',
+  'Choosing what to save is harder than choosing what to destroy.',
+  'A blank profile is not privacy. It is absence.',
+  'The work was ready before the infrastructure was.',
+  'Every word you reveal closes a door you didn\'t know was open.',
 ]
 
 const current = ref(0)
