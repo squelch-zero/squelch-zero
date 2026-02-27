@@ -21,6 +21,7 @@ const LINES = [
   { piece: 'gather', text: 'What you saved was the question.' },
   { piece: 'without', text: 'Removing a letter changed everything it touched.' },
   { piece: 'half-life', text: 'Something was already gone before you arrived.' },
+  { piece: 'scatter', text: 'The sentence fell apart in your hands.' },
 ]
 
 type LineData = {

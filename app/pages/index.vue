@@ -90,7 +90,7 @@ const age = computed(() => {
           to="/work"
           class="block mt-3 text-neutral-500 hover:text-neutral-300 transition-colors"
         >
-          all twenty pieces &rarr;
+          all twenty-one pieces &rarr;
         </NuxtLink>
 
         <div class="grid gap-2 mt-6">

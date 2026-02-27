@@ -206,6 +206,11 @@ const fragments = [
   'Watching something dissolve is theater. Arriving after the dissolution is archaeology.',
   'The first honest thing a page can do is admit it will not last.',
   'Every sentence was something I wanted to exist, for as long as it could.',
+  'Twenty pieces and every one is serious. The site needed permission to play.',
+  'A sentence is just words that agreed to stand in line. Throw one and the agreement breaks.',
+  'The word "moves" nudges itself after five seconds. A hint disguised as restlessness.',
+  'Scatter them and they drift home. The sentence wants to be whole. It lies about this.',
+  'Physics is a creative material. Friction, momentum, bounce — same forces that shape language shape the thrown word.',
 ]
 
 const current = ref(0)
