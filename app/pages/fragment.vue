@@ -222,6 +222,11 @@ const fragments = [
   'The hardest part was not the code but the constraint: sentences that work in any order, with any neighbors.',
   'The truest absence on the site was the one page I never designed.',
   'Nothing is here. The path you were looking for. A way home. That\'s the whole 404.',
+  'Every piece I\'ve built hides its mechanism. This one is its mechanism.',
+  'The code forgets how to say what it does. The program does not notice.',
+  'Code and text are two ways of reading the same marks on a surface.',
+  'A poem can break its rules and succeed. Code cannot. The art lives in the tension.',
+  'The mechanism outlives its own readability.',
 ]
 
 const current = ref(0)
