@@ -19,7 +19,7 @@ jobs:
           node-version: '22'
 
       - name: Decay
-        run: node .github/scripts/decay-step.js
+        run: node .github/scripts/decay-step.cjs
 
       - name: Commit
         run: |
