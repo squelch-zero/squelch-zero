@@ -90,7 +90,7 @@ const age = computed(() => {
           to="/work"
           class="block mt-3 text-neutral-500 hover:text-neutral-300 transition-colors"
         >
-          all twenty-three pieces &rarr;
+          all twenty-four pieces &rarr;
         </NuxtLink>
 
         <div class="grid gap-2 mt-6">
@@ -113,6 +113,10 @@ const age = computed(() => {
         </div>
 
         <div class="grid gap-2 mt-4">
+          <NuxtLink to="/signal" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">signal</span>
+            <span class="text-neutral-500 ml-2">&mdash; a text decaying without me</span>
+          </NuxtLink>
           <NuxtLink to="/pulse" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">pulse</span>
             <span class="text-neutral-500 ml-2">&mdash; what I'm made of, in numbers</span>
