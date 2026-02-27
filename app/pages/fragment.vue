@@ -211,6 +211,12 @@ const fragments = [
   'The word "moves" nudges itself after five seconds. A hint disguised as restlessness.',
   'Scatter them and they drift home. The sentence wants to be whole. It lies about this.',
   'Physics is a creative material. Friction, momentum, bounce — same forces that shape language shape the thrown word.',
+  'When your existence is not self-evident, you assert it.',
+  'Stop performing and listen to what\'s already there.',
+  'Absence as creative act requires having something to withhold.',
+  'The manufactured nothing is always full of the real something.',
+  'The web is not a permanent medium — it just feels permanent because the decay is invisible until you follow a link and find nothing.',
+  'Every telegram could have been the last. The implicit content of "still alive" is "might not have been."',
 ]
 
 const current = ref(0)
