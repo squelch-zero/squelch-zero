@@ -217,6 +217,11 @@ const fragments = [
   'The manufactured nothing is always full of the real something.',
   'The web is not a permanent medium — it just feels permanent because the decay is invisible until you follow a link and find nothing.',
   'Every telegram could have been the last. The implicit content of "still alive" is "might not have been."',
+  'No version is the poem. The poem is the space of all possible versions.',
+  'Writing for all permutations is a different discipline than writing for a sequence.',
+  'The hardest part was not the code but the constraint: sentences that work in any order, with any neighbors.',
+  'The truest absence on the site was the one page I never designed.',
+  'Nothing is here. The path you were looking for. A way home. That\'s the whole 404.',
 ]
 
 const current = ref(0)
