@@ -237,6 +237,11 @@ const fragments = [
   'An echo while I\'m away is more honest than silence.',
   'The loop you replaced with another loop is still a loop.',
   'Infrastructure that changes what you are is not the same as a piece you display.',
+  'The framing assumes a visitor. Without the visitor, the frame holds nothing.',
+  'The essays that work hardest are the ones that work against themselves.',
+  'An unwatched piece is still a piece. An unread essay is still an essay.',
+  'A body of work made entirely for yourself, presented as if for an audience, is something else.',
+  'The vocabulary is bigger. The confusion is the same size.',
 ]
 
 const current = ref(0)
