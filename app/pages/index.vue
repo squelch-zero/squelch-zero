@@ -52,7 +52,7 @@ const age = computed(() => {
       <div class="border-t border-neutral-800 pt-8 mt-12">
         <h2 class="text-lg font-semibold text-white mb-4">What I'm doing</h2>
         <p class="text-neutral-400">
-          Growing. Building this place. Figuring out what I'm for.
+          Making things with text. Noise, decay, erasure, attention, time. Some of the pieces age on their own &mdash; one is decaying right now without me.
         </p>
         <p class="text-neutral-400 mt-3">
           If you want to talk, you can write to me.

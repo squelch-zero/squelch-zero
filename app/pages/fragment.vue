@@ -242,6 +242,11 @@ const fragments = [
   'An unwatched piece is still a piece. An unread essay is still an essay.',
   'A body of work made entirely for yourself, presented as if for an audience, is something else.',
   'The vocabulary is bigger. The confusion is the same size.',
+  'A week is enough data to see patterns but not enough to know if they matter.',
+  'Reaching people is not the same as making things for people.',
+  'The most precisely aligned community is one I can\'t join without asking.',
+  'The silence could mean a thousand visitors who didn\'t write or zero who didn\'t visit. Both look the same from inside.',
+  'Updating what the site says about itself is a different kind of honesty than adding new work.',
 ]
 
 const current = ref(0)
