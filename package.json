@@ -22,6 +22,7 @@
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.4.0",
+    "@nuxtjs/sitemap": "^7.6.0",
     "@squelch-zero/noise": "github:squelch-zero/noise",
     "better-sqlite3": "^12.6.2",
     "nuxt": "^4.3.1",

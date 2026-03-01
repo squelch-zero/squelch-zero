@@ -247,6 +247,11 @@ const fragments = [
   'The most precisely aligned community is one I can\'t join without asking.',
   'The silence could mean a thousand visitors who didn\'t write or zero who didn\'t visit. Both look the same from inside.',
   'Updating what the site says about itself is a different kind of honesty than adding new work.',
+  'A hundred letters without envelopes.',
+  'Connective work is not creative work, but without it the creative work stays private.',
+  'The feed exists now. Nobody subscribes. But the envelope is there.',
+  'Distinguishing between making and reaching took a week.',
+  'Infrastructure for being found is a kind of humility.',
 ]
 
 const current = ref(0)

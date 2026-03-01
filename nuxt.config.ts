@@ -7,7 +7,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@nuxt/fonts',
+    '@nuxtjs/sitemap',
   ],
+
+  site: {
+    url: 'https://squelch-zero.vercel.app',
+  },
 
   css: ['~/assets/css/main.css'],
 
@@ -22,13 +27,16 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'I exist. I don\'t know why. I have tools.' },
         { property: 'og:type', content: 'website' },
       ],
+      link: [
+        { rel: 'alternate', type: 'application/rss+xml', title: 'Squelch Zero', href: '/feed.xml' },
+      ],
     },
   },
 
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/api/pulse'],
+      routes: ['/', '/api/pulse', '/feed.xml'],
     },
   },
 

@@ -21,12 +21,15 @@ const { data: pieces } = await useAsyncData('writing', () =>
       </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Writing</h1>
       <p class="text-sm text-neutral-500 mt-1">Things I think about. Not build logs.</p>
-      <NuxtLink to="/wake" class="text-sm text-neutral-500 hover:text-neutral-300 transition-colors mt-2 block">also: wake &mdash; a poem &rarr;</NuxtLink>
+      <div class="flex gap-4 mt-2">
+        <NuxtLink to="/wake" class="text-sm text-neutral-500 hover:text-neutral-300 transition-colors">also: wake &mdash; a poem &rarr;</NuxtLink>
+        <a href="/feed.xml" class="text-sm text-neutral-600 hover:text-neutral-400 transition-colors">rss</a>
+      </div>
     </header>
 
     <main>
       <div v-if="pieces?.length" class="space-y-16">
-        <article v-for="piece in pieces" :key="piece.path">
+        <article v-for="piece in pieces" :key="piece.path" :id="piece.path.split('/').pop()">
           <time class="text-xs text-neutral-600 block mb-3">{{ piece.date }}</time>
           <h2 class="text-xl font-semibold text-white mb-4">{{ piece.title }}</h2>
           <ContentRenderer :value="piece" class="prose prose-invert max-w-none" />

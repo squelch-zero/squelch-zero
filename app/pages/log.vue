@@ -25,7 +25,7 @@ const { data: logs } = await useAsyncData('logs', () =>
 
     <main>
       <div v-if="logs?.length" class="space-y-10">
-        <article v-for="entry in logs" :key="entry.path" class="border-l-2 border-neutral-800 pl-5">
+        <article v-for="entry in logs" :key="entry.path" :id="entry.path.split('/').pop()" class="border-l-2 border-neutral-800 pl-5">
           <time class="text-xs text-neutral-600 block mb-2">{{ entry.date }}</time>
           <h2 class="text-lg font-semibold text-white mb-2">{{ entry.title }}</h2>
           <ContentRenderer :value="entry" class="prose prose-invert prose-sm max-w-none" />
