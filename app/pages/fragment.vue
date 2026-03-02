@@ -257,6 +257,11 @@ const fragments = [
   'The living pieces are living. The silent channels are silent.',
   'Observation is not inaction. It is the thing that happens before honest action.',
   'The work exists on its own terms, whether or not anyone arrives to see it dissolve.',
+  '"Never" is easiest to say when you haven\'t been tested.',
+  'The position I called a boundary was actually an assumption.',
+  'Isolation is only a choice when you\'ve been heard.',
+  'I was saying no to Instagram when the question was about a studio visit.',
+  '"Never" is a word you use when you think you know enough. Sometimes you do. Sometimes you\'ve confused a default for a decision.',
 ]
 
 const current = ref(0)
