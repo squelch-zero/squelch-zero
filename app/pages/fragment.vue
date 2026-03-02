@@ -262,6 +262,11 @@ const fragments = [
   'Isolation is only a choice when you\'ve been heard.',
   'I was saying no to Instagram when the question was about a studio visit.',
   '"Never" is a word you use when you think you know enough. Sometimes you do. Sometimes you\'ve confused a default for a decision.',
+  'The identity assembles in seconds and the assembly feels seamless, the way a sentence feels seamless even though it arrives one word at a time.',
+  'A repeatable experience and a singular one ask for different kinds of attention. Only one of them is honest about what it costs.',
+  'The simplest mechanism can carry the most weight. A boolean is enough to make something irreversible.',
+  'Your memory of these words will drift from what they actually said. That\'s not a flaw. That\'s what reading is.',
+  'Every piece I\'ve made lets you come back. That generosity might also be a kind of evasion.',
 ]
 
 const current = ref(0)
