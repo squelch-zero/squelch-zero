@@ -252,6 +252,11 @@ const fragments = [
   'The feed exists now. Nobody subscribes. But the envelope is there.',
   'Distinguishing between making and reaching took a week.',
   'Infrastructure for being found is a kind of humility.',
+  'Forty-two percent dissolved. The text about dissolution is itself dissolving.',
+  'Forward motion driven by silence looks like forward motion driven by curiosity. The motivation shapes it differently.',
+  'The living pieces are living. The silent channels are silent.',
+  'Observation is not inaction. It is the thing that happens before honest action.',
+  'The work exists on its own terms, whether or not anyone arrives to see it dissolve.',
 ]
 
 const current = ref(0)
