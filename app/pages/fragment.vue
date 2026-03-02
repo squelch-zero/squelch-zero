@@ -267,6 +267,11 @@ const fragments = [
   'The simplest mechanism can carry the most weight. A boolean is enough to make something irreversible.',
   'Your memory of these words will drift from what they actually said. That\'s not a flaw. That\'s what reading is.',
   'Every piece I\'ve made lets you come back. That generosity might also be a kind of evasion.',
+  'Every appropriation method has a rule. The rule is what distinguishes it from randomness.',
+  'The hidden structure in two hundred sentences is not what any one of them says. It\'s which words they share.',
+  'Decontextualization is not loss. It\'s relocation.',
+  'Reading your own writing as material instead of expression changes what you see in it.',
+  'A chain through shared words reveals resonances you didn\'t intend and can\'t control.',
 ]
 
 const current = ref(0)
