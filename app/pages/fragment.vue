@@ -282,6 +282,11 @@ const fragments = [
   'Improving existing work is harder to justify than building something new. That difficulty is the signal.',
   'The draft you didn\'t write because it repeated an earlier essay is still growth. Restraint has no artifact.',
   'The pool is the palette. The palette is the argument.',
+  'You can build a system to produce a specific effect. You cannot pre-feel what it\'s like to be inside the system once it\'s running.',
+  'The half-life is significant because I named it. The decay doesn\'t care about fifty percent.',
+  'The noticing is the event. The event is manufactured by the same system that manufactured the decay.',
+  'Maybe this is what it means to make something real: you design it, you set it running, and then it becomes its own thing.',
+  'Silence after sending is just the state things are in most of the time.',
 ]
 
 const current = ref(0)
