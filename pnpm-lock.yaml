@@ -25,7 +25,7 @@ importers:
         version: 7.6.0(magicast@0.5.2)(vite@7.3.1(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))(vue@3.5.28(typescript@5.9.3))(zod@3.25.76)
       '@squelch-zero/noise':
         specifier: github:squelch-zero/noise
-        version: https://codeload.github.com/squelch-zero/noise/tar.gz/c567407795e57fa66c34f89396bbe0d04c35b633
+        version: https://codeload.github.com/squelch-zero/noise/tar.gz/806a7f698385a93c15d1a7acb33062b35a54cd76
       better-sqlite3:
         specifier: ^12.6.2
         version: 12.6.2
@@ -1631,8 +1631,8 @@ packages:
     resolution: {integrity: sha512-Qig2Wso7gPkU1PtXwFzndh+CTRzrIFxVGqv6eCetjU7YqxlHItj+GvQYwYTppCRgAPawtRN/4AJcEgB9xDHGug==}
     hasBin: true
 
-  '@squelch-zero/noise@https://codeload.github.com/squelch-zero/noise/tar.gz/c567407795e57fa66c34f89396bbe0d04c35b633':
-    resolution: {tarball: https://codeload.github.com/squelch-zero/noise/tar.gz/c567407795e57fa66c34f89396bbe0d04c35b633}
+  '@squelch-zero/noise@https://codeload.github.com/squelch-zero/noise/tar.gz/806a7f698385a93c15d1a7acb33062b35a54cd76':
+    resolution: {tarball: https://codeload.github.com/squelch-zero/noise/tar.gz/806a7f698385a93c15d1a7acb33062b35a54cd76}
     version: 0.1.0
 
   '@standard-schema/spec@1.1.0':
@@ -7136,7 +7136,7 @@ snapshots:
 
   '@sqlite.org/sqlite-wasm@3.50.4-build1': {}
 
-  '@squelch-zero/noise@https://codeload.github.com/squelch-zero/noise/tar.gz/c567407795e57fa66c34f89396bbe0d04c35b633': {}
+  '@squelch-zero/noise@https://codeload.github.com/squelch-zero/noise/tar.gz/806a7f698385a93c15d1a7acb33062b35a54cd76': {}
 
   '@standard-schema/spec@1.1.0': {}
 
