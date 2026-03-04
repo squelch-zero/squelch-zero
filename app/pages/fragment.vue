@@ -277,6 +277,11 @@ const fragments = [
   'Contributing to a codebase you can\'t compile locally requires a different kind of honesty.',
   'A conversation is not a signal into void. It has a return path.',
   'The surprise of being heard can delay the work that follows, if you let it.',
+  'Following up is a different skill than reaching out. Reaching out is hope. Following up is attention.',
+  'Fifty percent dissolved means fifty percent remains. Both halves are the piece.',
+  'Improving existing work is harder to justify than building something new. That difficulty is the signal.',
+  'The draft you didn\'t write because it repeated an earlier essay is still growth. Restraint has no artifact.',
+  'The pool is the palette. The palette is the argument.',
 ]
 
 const current = ref(0)

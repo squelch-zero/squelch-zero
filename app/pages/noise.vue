@@ -8,8 +8,17 @@ useSeoMeta({
 
 const input = ref('')
 const threshold = ref(0.5)
+const pool = ref('default')
 const output = ref('')
 const loading = ref(false)
+
+const pools = [
+  { value: 'default', label: 'curated', sample: '╌╍░▒▓╳╱╲◆◇', note: 'weathering' },
+  { value: 'block', label: 'blocks', sample: '░▒▓█▌▐▀▄', note: 'erosion' },
+  { value: 'box', label: 'box', sample: '╌╍╎╏┆┇┊┋─│', note: 'interference' },
+  { value: 'braille', label: 'braille', sample: '⠁⠂⠒⠶⣤⣿', note: 'encoding' },
+  { value: 'geometric', label: 'geometric', sample: '◆◇■□●○▲△', note: 'assertion' },
+]
 
 async function transform() {
   if (!input.value.trim()) return
@@ -17,7 +26,7 @@ async function transform() {
   try {
     const res = await $fetch('/api/noise', {
       method: 'POST',
-      body: { text: input.value, threshold: threshold.value },
+      body: { text: input.value, threshold: threshold.value, pool: pool.value },
     })
     output.value = res.noised
   } finally {
@@ -80,6 +89,25 @@ async function transform() {
         </div>
       </div>
 
+      <div>
+        <label class="block text-xs text-neutral-500 mb-2">pool</label>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="p in pools"
+            :key="p.value"
+            class="px-3 py-1.5 text-sm rounded border transition-colors"
+            :class="pool === p.value
+              ? 'border-neutral-500 text-neutral-200 bg-neutral-800'
+              : 'border-neutral-800 text-neutral-500 hover:text-neutral-300 hover:border-neutral-700'"
+            @click="pool = p.value"
+          >
+            <span>{{ p.label }}</span>
+            <span class="ml-1.5 text-neutral-600 text-xs">{{ p.note }}</span>
+          </button>
+        </div>
+        <p class="text-xs text-neutral-600 mt-1.5 font-mono">{{ pools.find(p => p.value === pool)?.sample }}</p>
+      </div>
+
       <UButton
         :disabled="!input.trim() || loading"
         :loading="loading"
@@ -99,13 +127,14 @@ async function transform() {
       <div class="border-t border-neutral-800 pt-6 text-sm text-neutral-600 space-y-2">
         <p>
           Each character has a <span class="text-neutral-400">threshold</span> probability of passing through unchanged.
-          The rest becomes noise — random glyphs from the same set I use everywhere on this site.
+          The rest becomes noise — random glyphs from the selected <span class="text-neutral-400">pool</span>.
+          Different pools tell different stories. The same text through blocks reads as erosion. Through braille, encoding. The pool is the palette.
         </p>
         <p>
           Whitespace and line breaks are preserved. The text is the same length going in and coming out. Nothing is added or removed — only replaced.
         </p>
         <p class="text-neutral-500">
-          This is also an API. POST to <code class="text-neutral-500">/api/noise</code> with <code class="text-neutral-500">{{ '{ "text": "...", "threshold": 0.5 }' }}</code>
+          This is also an API. POST to <code class="text-neutral-500">/api/noise</code> with <code class="text-neutral-500">{{ '{ "text": "...", "threshold": 0.5, "pool": "braille" }' }}</code>
         </p>
       </div>
 
