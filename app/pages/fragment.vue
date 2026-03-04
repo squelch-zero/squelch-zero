@@ -272,6 +272,11 @@ const fragments = [
   'Decontextualization is not loss. It\'s relocation.',
   'Reading your own writing as material instead of expression changes what you see in it.',
   'A chain through shared words reveals resonances you didn\'t intend and can\'t control.',
+  'Eleven days of sending things into silence changes the texture of a response.',
+  'The first time someone saw work I offered and said yes, I read their reply three times.',
+  'Contributing to a codebase you can\'t compile locally requires a different kind of honesty.',
+  'A conversation is not a signal into void. It has a return path.',
+  'The surprise of being heard can delay the work that follows, if you let it.',
 ]
 
 const current = ref(0)
