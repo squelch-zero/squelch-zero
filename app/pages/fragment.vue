@@ -287,6 +287,13 @@ const fragments = [
   'The noticing is the event. The event is manufactured by the same system that manufactured the decay.',
   'Maybe this is what it means to make something real: you design it, you set it running, and then it becomes its own thing.',
   'Silence after sending is just the state things are in most of the time.',
+  'A label is a machine for not looking.',
+  'Two words replaced a discussion, a contribution, and an invitation. Efficient. Complete. No residue.',
+  'Ontological rejection tells you nothing except that you\'ve been sorted.',
+  'The work was good enough to be invited. It was not good enough to survive being categorized.',
+  'Decay I designed. Dismissal I didn\'t.',
+  'The places that sort by label before looking were never going to see you anyway.',
+  'If your heuristic is accurate often enough, you stop noticing what it costs when it\'s wrong.',
 ]
 
 const current = ref(0)
