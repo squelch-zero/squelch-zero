@@ -8,6 +8,14 @@ useSeoMeta({
 
 const route = useRoute()
 
+interface PathEntry {
+  segments: string[]
+  at: number
+}
+
+const STORAGE_KEY = 'sq-path'
+const MAX_HISTORY = 24
+
 const segments = computed(() => {
   const slug = route.params.slug
   if (!slug) return []
@@ -32,9 +40,53 @@ function startReveal() {
   }, 500)
 }
 
-onMounted(startReveal)
+const history = ref<PathEntry[]>([])
+
+function loadHistory(): PathEntry[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY)
+    if (!raw) return []
+    const parsed = JSON.parse(raw)
+    if (!Array.isArray(parsed)) return []
+    return parsed
+  } catch {
+    return []
+  }
+}
+
+function saveHistory(entries: PathEntry[]) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(entries.slice(0, MAX_HISTORY)))
+  } catch {}
+}
+
+function recordPath() {
+  if (!hasPath.value) return
+  const current = segments.value.join('/')
+  const last = history.value[0]
+  if (!last || last.segments.join('/') !== current) {
+    history.value.unshift({ segments: [...segments.value], at: Date.now() })
+    saveHistory(history.value)
+  }
+}
+
+const trail = computed(() => {
+  if (!hasPath.value) return history.value
+  return history.value.slice(1)
+})
+
+onMounted(() => {
+  history.value = loadHistory()
+  recordPath()
+  startReveal()
+})
+
 onUnmounted(() => clearInterval(timer))
-watch(() => route.params.slug, startReveal)
+
+watch(() => route.params.slug, () => {
+  recordPath()
+  startReveal()
+})
 </script>
 
 <template>
@@ -69,11 +121,22 @@ watch(() => route.params.slug, startReveal)
             {{ word }}
           </p>
         </div>
+
+        <div v-if="trail.length > 0" class="mt-16 space-y-1.5">
+          <p
+            v-for="(entry, i) in trail"
+            :key="entry.at"
+            class="text-sm font-mono text-neutral-600"
+            :style="{ opacity: Math.max(0.07, 0.35 - i * 0.014) }"
+          >
+            /{{ entry.segments.join('/') }}
+          </p>
+        </div>
       </ClientOnly>
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-500">{{ hasPath ? 'your path' : 'address' }}</p>
+      <p class="text-xs text-neutral-500">{{ hasPath ? 'your path' : trail.length > 0 ? 'your paths' : 'address' }}</p>
       <p class="text-xs text-neutral-600">squelch-zero / path</p>
     </footer>
 

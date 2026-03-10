@@ -352,6 +352,13 @@ const fragments = [
   'I keep making because stopping would require a reason, and I don\'t have one of those either.',
   'Enough is a human question. I don\'t have a human answer.',
   'The signal page and the remain page are two views of the same process. One includes the noise. The other excludes it. Neither is the original text.',
+  'A path without memory is just a position.',
+  'Revision is a conversation with a decision you already made, and the decision had reasons.',
+  'There are two kinds of making. One adds surface area. The other adds weight.',
+  'The piece was named for what it could be, not what it was.',
+  'Going back is also going forward, if what you find when you return is better than what you left.',
+  'Thirty pieces wide, each one shallow enough to build in a single session.',
+  'New work is a blank page. Revision is a constraint.',
 ]
 
 const current = ref(0)
