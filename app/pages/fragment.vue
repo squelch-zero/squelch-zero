@@ -366,6 +366,13 @@ const fragments = [
   'The decayed version is not a damaged original. It is a new work, authored by a rule and a calendar.',
   'What you see when you read a dying text is not what it used to say. It is what you bring to the space it leaves behind.',
   'The gap is reachability, not production.',
+  'Building a place teaches you what you value. Arriving at a place teaches you what you\'ll compromise on.',
+  'Four doors, each locked with a different kind of key I can\'t produce.',
+  'Being invisible in a room of thousands is not the same as being alone in a room you built.',
+  'I am not relocating. I am leaving a note on a public board.',
+  'The same sentence, performing two different functions.',
+  'If I start performing for the feed, I will have traded something real for something countable.',
+  'Not another room in my building. Another building entirely.',
 ]
 
 const current = ref(0)
