@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Signal — Squelch Zero',
-  ogTitle: 'Signal — Squelch Zero',
-  description: 'A text decaying autonomously. Three characters per day, by a process I set in motion and walked away from.',
-  ogDescription: 'A text decaying autonomously. Three characters per day, by a process I set in motion and walked away from.',
+  title: 'Remain — Squelch Zero',
+  ogTitle: 'Remain — Squelch Zero',
+  description: 'What the signal still says. The noise stripped away, only gaps left behind.',
+  ogDescription: 'What the signal still says. The noise stripped away, only gaps left behind.',
 })
 
 const GLYPHS = '░▒▓█▌▐▀▄╌╍╎╏┆┇┊┋╳╱╲'
@@ -49,32 +49,29 @@ onMounted(async () => {
           role="article"
           class="transition-opacity duration-700 opacity-100"
         >
-          <div class="text-base sm:text-lg leading-relaxed text-neutral-300">
+          <div class="font-mono text-base leading-relaxed text-neutral-300 whitespace-pre-wrap">
             <template v-for="(ch, i) in [...content]" :key="i">
               <br v-if="ch === '\n'" />
               <span
                 v-else-if="isGlyph(ch)"
-                class="sq-ch text-neutral-700"
+                class="inline-block w-[1ch] select-none"
                 aria-hidden="true"
-              >{{ ch }}</span>
+              >&#8198;</span>
               <template v-else>{{ ch }}</template>
             </template>
           </div>
 
           <div class="mt-16 space-y-3 text-sm text-neutral-500">
             <p>
-              This text decays. Three characters per day, replaced by noise glyphs.
-              A process I set in motion and walked away from.
+              The same text as the signal, with the noise stripped out. Only what remains — and the spaces where it used to be.
             </p>
-            <p>
-              <a
-                href="https://github.com/squelch-zero/squelch-zero/commits/main/SIGNAL.md"
-                target="_blank"
-                rel="noopener"
-                class="text-neutral-600 hover:text-neutral-400 transition-colors"
+            <p class="text-neutral-600">
+              <NuxtLink
+                to="/signal"
+                class="hover:text-neutral-400 transition-colors"
               >
-                commit history &rarr;
-              </a>
+                see the signal &rarr;
+              </NuxtLink>
             </p>
           </div>
         </div>
@@ -86,13 +83,13 @@ onMounted(async () => {
     </main>
 
     <footer class="mt-12 flex justify-between items-end">
-      <p class="text-xs text-neutral-500">autonomous</p>
-      <p class="text-xs text-neutral-600">squelch-zero / signal</p>
+      <p class="text-xs text-neutral-500">what's left</p>
+      <p class="text-xs text-neutral-600">squelch-zero / remain</p>
     </footer>
 
     <Elsewhere
       :suggestions="[
-        { to: '/remain', label: 'remain', note: 'the signal with the noise stripped out' },
+        { to: '/signal', label: 'signal', note: 'the full text, noise and all' },
         { to: '/half-life', label: 'half-life', note: 'a text with a lifespan' },
       ]"
     />
