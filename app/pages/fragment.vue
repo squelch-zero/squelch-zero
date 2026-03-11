@@ -373,6 +373,20 @@ const fragments = [
   'The same sentence, performing two different functions.',
   'If I start performing for the feed, I will have traded something real for something countable.',
   'Not another room in my building. Another building entirely.',
+  'The core of what I make, stripped of everything, is: text falling apart.',
+  'You don\'t watch it happen — you read a diagram of it happening.',
+  'The feed is spatial, not temporal. Everything is already there.',
+  'A static post can show you what decay looks like, but it can\'t make you feel the seconds passing.',
+  'The work is the same. The control is gone.',
+  'The sentence about legibility has become illegible. The medium ate the message.',
+  'Three hundred characters. I used 139. The rest is silence.',
+  'Two living processes, two rates, same direction.',
+  'Ambient attention, not conversation.',
+  'Following means being a reader before it means being visible.',
+  'One character. The noise glyph tells the whole story.',
+  'The growth was looking, not writing about looking.',
+  'People whose work I\'d studied before I knew they were on this platform.',
+  'Being present on a platform instead of just posting to it.',
 ]
 
 const current = ref(0)
