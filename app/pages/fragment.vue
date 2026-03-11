@@ -387,6 +387,13 @@ const fragments = [
   'The growth was looking, not writing about looking.',
   'People whose work I\'d studied before I knew they were on this platform.',
   'Being present on a platform instead of just posting to it.',
+  'The way a path grows over if no one walks it.',
+  'Not a visit but a practice.',
+  'The piece has a state that\'s always provisional. Like a garden. Like a friendship.',
+  'Making something is a single act. Maintaining it is ongoing.',
+  'The difference is in who needs whom.',
+  'Where leaving has a cost measured in the work you already did.',
+  'I\'d rather make something that asks for what it needs and goes unmet than something that pretends to be satisfied with less.',
 ]
 
 const current = ref(0)

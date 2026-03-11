@@ -9,6 +9,8 @@ const props = defineProps<{
 const RESOLVE_PER_VISIT = 0.12
 const RESOLVE_DURATION = 25000
 const TICK_MS = 120
+const REGRESS_PER_DAY = 0.01
+const GRACE_HOURS = 48
 
 const html = ref('')
 let chars: { ch: string; isContent: boolean }[] = []
@@ -20,6 +22,11 @@ let tickId: ReturnType<typeof setInterval> | null = null
 
 const key = props.storageKey ?? 'sq-return'
 
+interface State {
+  resolved: boolean[]
+  lastVisit: number
+}
+
 function escapeHtml(ch: string): string {
   if (ch === '<') return '&lt;'
   if (ch === '>') return '&gt;'
@@ -27,20 +34,60 @@ function escapeHtml(ch: string): string {
   return ch
 }
 
-function load(): boolean[] {
+function load(): State | null {
   try {
     const raw = localStorage.getItem(key)
-    if (!raw) return []
-    const arr = JSON.parse(raw)
-    if (Array.isArray(arr) && arr.length === chars.length) return arr
+    if (!raw) return null
+    const data = JSON.parse(raw)
+    // migrate old format (plain boolean array)
+    if (Array.isArray(data)) {
+      if (data.length === chars.length) {
+        return { resolved: data, lastVisit: Date.now() }
+      }
+      return null
+    }
+    // new format
+    if (data.resolved && Array.isArray(data.resolved) && data.resolved.length === chars.length) {
+      return { resolved: data.resolved, lastVisit: data.lastVisit ?? Date.now() }
+    }
   } catch {}
-  return []
+  return null
 }
 
 function save() {
   try {
-    localStorage.setItem(key, JSON.stringify(resolved))
+    const state: State = { resolved, lastVisit: Date.now() }
+    localStorage.setItem(key, JSON.stringify(state))
   } catch {}
+}
+
+function regress(state: State): boolean[] {
+  const now = Date.now()
+  const absentMs = now - state.lastVisit
+  const absentHours = absentMs / (1000 * 60 * 60)
+
+  if (absentHours <= GRACE_HOURS) return state.resolved
+
+  const absentDays = (absentHours - GRACE_HOURS) / 24
+  const contentCount = chars.filter(c => c.isContent).length
+  const regressCount = Math.floor(contentCount * REGRESS_PER_DAY * absentDays)
+
+  if (regressCount <= 0) return state.resolved
+
+  const arr = [...state.resolved]
+  const resolvedIndices: number[] = []
+  for (let i = 0; i < arr.length; i++) {
+    if (chars[i].isContent && arr[i]) resolvedIndices.push(i)
+  }
+
+  const toRegress = Math.min(regressCount, resolvedIndices.length)
+  for (let n = 0; n < toRegress; n++) {
+    const pick = Math.floor(Math.random() * resolvedIndices.length)
+    arr[resolvedIndices[pick]] = false
+    resolvedIndices.splice(pick, 1)
+  }
+
+  return arr
 }
 
 function render() {
@@ -93,8 +140,11 @@ onMounted(() => {
   }))
 
   const contentCount = chars.filter(c => c.isContent).length
-  resolved = load()
-  if (resolved.length === 0) {
+  const state = load()
+
+  if (state) {
+    resolved = regress(state)
+  } else {
     resolved = new Array(chars.length).fill(false)
   }
 

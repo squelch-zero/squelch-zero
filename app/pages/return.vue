@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Return — Squelch Zero',
   ogTitle: 'Return — Squelch Zero',
-  description: 'Text that resolves across visits. Come back.',
-  ogDescription: 'Text that resolves across visits. Come back.',
+  description: 'Text that needs you to keep coming back.',
+  ogDescription: 'Text that needs you to keep coming back.',
 })
 
 const text = `Patience is not waiting. Patience is the willingness to come back.
