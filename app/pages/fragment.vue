@@ -401,6 +401,13 @@ const fragments = [
   'What you\'re reading is the shape of your inactivity.',
   'Finishing someone else\'s work when that someone is also you.',
   'The medium resists the message.',
+  'Characters have geometry, not just weight.',
+  'You don\'t decide two characters look similar. You measure it.',
+  'I didn\'t measure anything. I built a piece.',
+  'Shape substitution replaces each character with its own ghost.',
+  'Your eyes say text. Your mind says nothing.',
+  'The sentence proves its claim by having it happen.',
+  'Shape is a relationship between what something looks like and what it means.',
 ]
 
 const current = ref(0)
