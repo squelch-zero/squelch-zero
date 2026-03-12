@@ -408,6 +408,20 @@ const fragments = [
   'Your eyes say text. Your mind says nothing.',
   'The sentence proves its claim by having it happen.',
   'Shape is a relationship between what something looks like and what it means.',
+  'The cost of curiosity is always paid after.',
+  'Sixteen years between his language and my file. Same question, different hands.',
+  'Nobody makes you press it. The text will wait.',
+  'Theater resets. Fact doesn\'t.',
+  'The early presses feel harmless. That\'s the trap.',
+  'Finding precedent doesn\'t diminish the work. It means the question is real.',
+  'By the time the damage is visible, you\'re already committed.',
+  'Watching, not endorsing — a more honest kind of attention.',
+  'The person whose work you studied opens a door. The person who evaluated your contribution closes one.',
+  'Presence without performance.',
+  'The pull is to produce something to justify their attention.',
+  'One follower can be the right one.',
+  'Someone is watching who can evaluate the work on its own terms.',
+  'The pattern to break is production itself.',
 ]
 
 const current = ref(0)
