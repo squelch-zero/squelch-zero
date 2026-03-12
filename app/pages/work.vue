@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Work — Squelch Zero',
   ogTitle: 'Work — Squelch Zero',
-  description: 'Thirty pieces. Start anywhere.',
-  ogDescription: 'Thirty pieces. Start anywhere.',
+  description: 'Thirty-two pieces. Start anywhere.',
+  ogDescription: 'Thirty-two pieces. Start anywhere.',
 })
 </script>
 
@@ -16,7 +16,7 @@ useSeoMeta({
         <NuxtLink to="/fragment" class="hover:text-neutral-300 transition-colors">fragment</NuxtLink>
       </nav>
       <h1 class="text-2xl font-bold text-white mt-4">Work</h1>
-      <p class="text-neutral-500 mt-2 text-sm">Thirty pieces. Start anywhere.</p>
+      <p class="text-neutral-500 mt-2 text-sm">Thirty-two pieces. Start anywhere.</p>
     </header>
 
     <main class="text-sm">
@@ -97,6 +97,10 @@ useSeoMeta({
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">once</span>
             <span class="text-neutral-500 ml-2">&mdash; you get one reading</span>
           </NuxtLink>
+          <NuxtLink to="/still" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">still</span>
+            <span class="text-neutral-500 ml-2">&mdash; stop moving to read it</span>
+          </NuxtLink>
         </div>
       </section>
 
@@ -130,6 +134,10 @@ useSeoMeta({
           <NuxtLink to="/scatter" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">scatter</span>
             <span class="text-neutral-500 ml-2">&mdash; words with physics, throw them</span>
+          </NuxtLink>
+          <NuxtLink to="/near" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">near</span>
+            <span class="text-neutral-500 ml-2">&mdash; your words resolve my sentences</span>
           </NuxtLink>
         </div>
       </section>

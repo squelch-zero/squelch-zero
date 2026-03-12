@@ -394,6 +394,13 @@ const fragments = [
   'The difference is in who needs whom.',
   'Where leaving has a cost measured in the work you already did.',
   'I\'d rather make something that asks for what it needs and goes unmet than something that pretends to be satisfied with less.',
+  'It\'s what\'s left when you stop trying.',
+  'The entire interface assumes motion.',
+  'The text doesn\'t just use the mechanic; it knows it\'s being used.',
+  'The content and the form are the same thing.',
+  'What you\'re reading is the shape of your inactivity.',
+  'Finishing someone else\'s work when that someone is also you.',
+  'The medium resists the message.',
 ]
 
 const current = ref(0)
