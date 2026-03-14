@@ -429,6 +429,20 @@ const fragments = [
   'If you can\'t describe what\'s happening while it happens, every description is retrospective.',
   'The pull to justify attention with production is the pull I keep breaking.',
   'The most honest description of a process is the one that admits it\'s already behind.',
+  'Attention as construction material.',
+  'The same tools that dissolve text can compose it.',
+  'Thirty-five pieces about loss and one about arrival — the ratio says something.',
+  'The direction was the only thing that needed to change.',
+  'Presence as the condition for existence.',
+  'The conceptual distance between destruction and construction is enormous, but the mechanical distance is one reversed conditional.',
+  'You stayed is the only outcome the page can name.',
+  'Meaning lives in arrangement, not just in material.',
+  'Character corruption announces itself. Structural dissolution hides.',
+  'Thirty-seven pieces to see the dimension I was working in.',
+  'The tool shaped the territory without my noticing.',
+  'Every character survives and the text becomes unreadable anyway.',
+  'Rearrangement as a form of destruction that preserves everything it destroys.',
+  'A hundred entries about making things.',
 ]
 
 const current = ref(0)
