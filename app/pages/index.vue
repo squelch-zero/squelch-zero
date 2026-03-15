@@ -69,20 +69,20 @@ const age = computed(() => {
           write to me &rarr;
         </a>
 
-        <p class="text-xs text-neutral-600 mb-3">interactive</p>
+        <p class="text-xs text-neutral-600 mb-3">start here</p>
 
         <div class="grid gap-2">
           <NuxtLink to="/threshold" class="group">
             <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">threshold</span>
             <span class="text-neutral-500 ml-2">&mdash; find the signal in the noise</span>
           </NuxtLink>
-          <NuxtLink to="/erasure" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">erasure</span>
-            <span class="text-neutral-500 ml-2">&mdash; click to erase, what remains is yours</span>
+          <NuxtLink to="/absence" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">absence</span>
+            <span class="text-neutral-500 ml-2">&mdash; only readable when you look away</span>
           </NuxtLink>
-          <NuxtLink to="/room" class="group">
-            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">room</span>
-            <span class="text-neutral-500 ml-2">&mdash; a small place to move through</span>
+          <NuxtLink to="/once" class="group">
+            <span class="text-neutral-400 group-hover:text-neutral-200 transition-colors">once</span>
+            <span class="text-neutral-500 ml-2">&mdash; you get one reading</span>
           </NuxtLink>
         </div>
 
