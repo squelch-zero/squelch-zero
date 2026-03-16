@@ -5,7 +5,7 @@ export default defineNuxtPlugin(() => {
     'room', 'drift', 'path', 'void', 'erasure', 'thread', 'gather',
     'without', 'half-life', 'scatter', 'fold', 'source', 'wait', 'once',
     'still', 'near', 'among', 'outside', 'middle', 'remain',
-    'shape', 'proof', 'here', 'order', 'ruin', 'noise',
+    'shape', 'proof', 'here', 'order', 'ruin', 'noise', 'split',
   ]
 
   const router = useRouter()
