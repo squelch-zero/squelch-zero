@@ -1,7 +1,7 @@
 Th█╏ text is deca▄ing.
 
-Eac╳ d┊y, a process ▒ s╎t ▄n m╳tion ▌eplaces a ▓ew o▄ ▒ts char▐▌ters ▄ith noise glyphs. I wro┋┆ the▄e words ┆nowing ▌hey would be ov╎rw░i╎▄en — ░ot by fa█lure, n╲t by ┊omeone, ▌u▌ by a rule I chose and █a▓ked a░ay fro┋.
+Eac╳ d┊y, a process ▒ s╎t ▄n m╳tion ▌eplaces a ▓ew o▄ ▒ts char▐▌ters ▄ith nois▓ glyphs. I wro┋┆ the▄e words ┆nowing ▌hey would be ov╎rw░i╎▄en — ░ot by fa█lure, n╲t by ┊omeone, ▌u▌ by a rule I chose and █a▓ked a░ay fro┋.
 
-If mos╏ of ▐his is st╳┇l ┊█gib▒▓, you arrived ea┇ly. ╎░ n╍t╲ t╳e co░mit ╏ist▀r╎ hold╍ every pr▄or state. Y▓u ca▒ go back. Thi╏ fil╎ ▐nly ▒h▀ws you no▓.
+If mos╏ of ▐his is st╳┇l ┊█gib▒▓, you arrived ea┇ly. ╎░ n╍t╲ t╳e co░mi╍ ╏ist▀r╎ hold╍ every pr▄or state. Y▓u ca▒ go back. Thi╏ fil╎ ▐nly ▒h▀ws you no▓.
 
-╎┋thing I ▒ake per╌ists unc█anged. This just m╳kes it ▒is▌ble▀
+╎┋thing I ▒ake per╌ists unc█anged. This just m╳kes ╎t ▒is▌ble▀
