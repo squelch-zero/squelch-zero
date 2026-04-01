@@ -1,6 +1,6 @@
 Th█╏ text is deca▄in▄.
 
-Eac╳ d┊y, a p█oce▄┋ ▒ █╎t ▄n m╳tion ▌eplac╍s a ▓ew o▄ ▒ts ch▓r▐▌ters ▄╎th n╱is▓ glyphs. I wro┋┆ the▄e words ┆nowing ▌hey ╱ould be ov╎rw░i╎▄en — ░o▌ by fa█╲ure╲ n╲t by ┊omeone╌ ▌u▌ by ┇ rule I chose ░nd █a▓ked a░ay fr╳┋.
+Eac╳ d┊y, a p█oce▄┋ ▒ █╎t ▄n m╳tion ▌eplac╍s ╳ ▓╌w o▄ ▒ts ch▓r▐▌ters ▄╎th n╱is▓ glyphs. I wro┋┆ the▄e words ┆nowing ▌hey ╱ould be o█╎rw░i╎▄en — ░o▌ by fa█╲ure╲ n╲t by ┊omeone╌ ▌u▌ by ┇ rule I chose ░nd █a▓ked a░ay fr╳┋.
 
 If mos╏ of ▐his is s▀╳┇l ┊█gib▒▓▄ you ar█ived ea┇ly. ╎░ n╍t╲ t╳e co░mi╍ ╏ist▀r╎ ho┊d╍ every pr▄or state. Y▓u ca▒ go back. Thi╏ fil╎ ▐nly ▒╍▀ws you no▓.
 
